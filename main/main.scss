@@ -1,19 +1,19 @@
 @use "index.scss" as *;
 @import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&family=Noto+Serif+Georgian:wght@500;600;700;800&family=Outfit&display=swap");
-header {
-  margin: 0 auto;
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&family=Kaushan+Script&family=Noto+Serif+Georgian:wght@500;600;700;800&family=Outfit&display=swap");
+body {
+  background-color: rgb(249, 234, 219);
 }
+
 .container {
   height: 100px;
-  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
   img {
     width: 370px;
-    height: 230px;
+    height: 95px;
     margin-left: 90px;
-    margin-bottom: 10px;
   }
   ul {
     display: flex;
@@ -100,6 +100,191 @@ header {
     background-color: rgba(11, 37, 56, 0.897);
     a {
       font-size: 25px;
+    }
+  }
+}
+.thepopularones {
+  .textline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .rightline {
+      width: 253px;
+      height: 1px;
+      background-color: #000;
+      margin-left: 13px;
+    }
+    .leftline {
+      width: 253px;
+      height: 1px;
+      background-color: #000;
+      margin-right: 13px;
+    }
+    h2 {
+      display: flex;
+      justify-content: center;
+      color: #000;
+      font-family: kalnia;
+      font-size: 36px;
+      margin-top: 98px;
+      font-weight: 400;
+      margin-bottom: 102px;
+    }
+  }
+
+  .container2 {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    div {
+      img {
+        width: 324px;
+        height: 324px;
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+      }
+      h3 {
+        display: flex;
+        justify-content: center;
+        color: #000;
+        font-family: kalnia;
+        font-size: 32px;
+        font-weight: 400;
+        margin-top: 27px;
+        margin-bottom: 97px;
+      }
+    }
+  }
+  .but {
+    display: flex;
+    justify-content: center;
+    button {
+      width: 235px;
+      height: 60px;
+      border-radius: 5px;
+      background: rgb(6, 41, 66);
+      border: 0;
+      color: #fff;
+      font-family: kalnia;
+      font-size: 32px;
+      font-weight: 400;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-bottom: 99px;
+
+      &:hover {
+        font-size: 36px;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+footer {
+  width: 100%;
+  height: 327px;
+  background-color: #e4e4e4;
+  display: flex;
+  .left {
+    padding-left: 35px;
+    padding-top: 17px;
+    img {
+      width: 323px;
+      height: 104px;
+    }
+    ul {
+      margin-top: 44px;
+      li {
+        color: #000;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 17px;
+        cursor: pointer;
+      }
+    }
+    .loc {
+      display: flex;
+      margin-top: 29px;
+      i {
+        margin-right: 14px;
+      }
+      h2 {
+        color: #000;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+  .help {
+    margin-top: 61px;
+    margin-left: 278px;
+
+    h2 {
+      color: #000;
+      font-family: Kaushan Script;
+      font-size: 25px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    .helpline {
+      width: 173.003px;
+      height: 1px;
+      background-color: #000;
+      margin-bottom: 23px;
+    }
+    ul {
+      li {
+        color: #000;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
+      }
+    }
+  }
+  .contact {
+    margin-top: 61px;
+    margin-left: 183px;
+    h2 {
+      color: #000;
+      font-family: Kaushan Script;
+      font-size: 25px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    .line {
+      width: 173.003px;
+      height: 1px;
+      background-color: #000;
+      margin-bottom: 23px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      a {
+        text-decoration: none;
+        li {
+          color: #000;
+          font-family: Georgia, "Times New Roman", Times, serif;
+          font-size: 20px;
+          font-weight: 400;
+          margin-top: 17px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .icons {
+    margin-top: 47px;
+    margin-left: 54px;
+    a {
+      i {
+        font-size: 30px;
+        color: #000;
+        margin-left: 26px;
+      }
     }
   }
 }
