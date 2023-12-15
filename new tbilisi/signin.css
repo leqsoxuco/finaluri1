@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("photos/BACK.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#logo {
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign {
+  width: 650px;
+  height: 650px;
+  background-color: rgba(11, 37, 56, 0.8);
+  margin-top: 40px;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 10px 10px 5px 5px rgba(107, 120, 125, 0.48);
+}
+.sign .img1 {
+  width: 320px;
+  height: 650px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  background-image: url(photos/gif.gif);
+}
+.sign .img1 h1 {
+  color: #ffffff;
+  font-size: 35px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.sign .img1 .icons i {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 505px;
+  gap: 20px;
+}
+
+.fa-facebook {
+  color: rgb(44, 67, 242);
+}
+
+.fa-google {
+  color: rgb(255, 0, 0);
+}
+
+.fa-x-twitter {
+  color: black;
+}
+
+.input {
+  margin-top: 150px;
+}
+.input form label {
+  margin-left: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+}
+.input form input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  width: 270px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 15px;
+  background-color: rgba(83, 73, 73, 0.712);
+}
+
+.reg {
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  margin-top: -150px;
+  gap: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  margin-bottom: 150px;
+}
+.reg #in {
+  background-color: rgba(106, 129, 143, 0.566);
+  height: 60px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.reg #up {
+  height: 60px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+button {
+  padding: 25px;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 0px;
+  margin-left: 65px;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.386);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 25px;
+  border: 2px solid rgb(255, 255, 255);
+  transition: 0.3s;
+}
+button a {
+  color: rgb(255, 255, 255);
+}
+button:hover {
+  background-color: rgba(11, 37, 56, 0.8);
+}
+
+#mess a i {
+  font-size: 50px;
+  color: rgb(44, 67, 242);
+  position: fixed;
+  right: 0px;
+  margin-right: 50px;
+  bottom: 0px;
+  margin-bottom: 90px;
+}
+
+::-moz-placeholder {
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+#preloader {
+  background: #ffffff url(photos/LOADING.gif) no-repeat center center;
+  background-size: 10%;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+}
+
+iframe {
+  display: none;
+}/*# sourceMappingURL=signin.css.map */

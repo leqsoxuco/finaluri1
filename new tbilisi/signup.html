@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="signup.css" />
+    <title>signin</title>
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <section>
+      <div class="sign">
+        <div class="img1">
+          <h1>Welcome Page</h1>
+          <div class="icons">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.google.com/"><i class="fa-brands fa-google"></i></a>
+            <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="input">
+          <div class="sup">
+            <h2 id="in"><a href="signin.html">Sign in</a></h2>
+            <h2 id="up"><a href="">Sign up</a></h2>
+          </div>
+          <form action="info">
+            <label for="nick">Nickname</label>
+            <input id="nick" type="text" placeholder="Nickname" />
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter Your Email" />
+            <label for="ps">Password</label>
+            <input id="ps" type="password" placeholder="Password" />
+            <input type="password" placeholder="Confirm Password" />
+          </form>
+          <button><a href="signin.html">SIGN UP</a></button>
+        </div>
+      </div>
+    </section>
+    <aside id="mess">
+      <a href="https://www.facebook.com/"
+        ><i class="fa-brands fa-facebook-messenger"></i
+      ></a>
+    </aside>
+    <script>
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
