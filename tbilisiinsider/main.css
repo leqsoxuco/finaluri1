@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&family=Noto+Serif+Georgian:wght@500;600;700;800&family=Outfit&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  margin: 0 auto;
+}
+
+.container {
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container img {
+  width: 370px;
+  height: 230px;
+  margin-left: 90px;
+  margin-bottom: 10px;
+}
+.container ul {
+  display: flex;
+  color: #000;
+  font-size: 25px;
+  font-weight: 400;
+}
+.container ul .link {
+  margin-right: 40px;
+  font-family: Kalnia;
+}
+.container ul .link a {
+  color: rgba(11, 37, 56, 0.8);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+.container ul .link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(11, 37, 56, 0.8);
+  transition: all 0.3s ease;
+}
+.container ul .link a:hover::after {
+  width: 70%;
+}
+.container i {
+  margin-right: 96px;
+  font-size: 25px;
+  color: rgba(11, 37, 56, 0.8);
+}
+
+.story {
+  width: 100%;
+  height: 615px;
+  background-image: url(photos/mainpic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.story h2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: kalnia;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 193px;
+}
+.story .button {
+  display: flex;
+  justify-content: center;
+}
+.story .button button {
+  width: 227px;
+  height: 55px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: rgb(11, 37, 56);
+  border: 0;
+  transition: 0.3s;
+}
+.story .button button a {
+  color: #fff;
+  font-family: Jomolhari;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.story button:hover {
+  background-color: rgba(11, 37, 56, 0.897);
+}
+.story button:hover a {
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=main.css.map */
