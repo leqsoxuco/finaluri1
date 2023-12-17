@@ -100,75 +100,42 @@ body {
   color: rgba(11, 37, 56, 0.8);
 }
 
-.story {
+.Restaurants {
   width: 100%;
   height: 615px;
-  background-image: url(photos/mainpic.jpg);
+  background-image: url(photos/restaurants.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
 }
-.story h2 {
+.Restaurants h2 {
   color: #fff;
   text-align: center;
   font-family: kalnia;
   font-size: 70px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   padding-top: 193px;
 }
-.story .button {
-  display: flex;
-  justify-content: center;
-}
-.story .button button {
-  width: 227px;
-  height: 55px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  background: rgb(11, 37, 56);
-  border: 0;
-  transition: 0.3s;
-}
-.story .button button a {
-  color: #fff;
-  font-family: Jomolhari;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  transition: 0.3s;
-}
-.story button:hover {
-  background-color: rgba(11, 37, 56, 0.897);
-}
-.story button:hover a {
-  font-size: 25px;
-}
 
-.thepopularones .textline {
+section .textline {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.thepopularones .textline .rightline {
+section .textline .rightline {
   width: 253px;
   height: 1px;
   background-color: #000;
   margin-left: 13px;
 }
-.thepopularones .textline .leftline {
+section .textline .leftline {
   width: 253px;
   height: 1px;
   background-color: #000;
   margin-right: 13px;
 }
-.thepopularones .textline h2 {
+section .textline h2 {
   display: flex;
   justify-content: center;
   color: #000;
@@ -178,49 +145,155 @@ body {
   font-weight: 400;
   margin-bottom: 102px;
 }
-.thepopularones .container2 {
+section .top {
   display: flex;
   justify-content: center;
   gap: 45px;
 }
-.thepopularones .container2 div img {
+section .top img {
   width: 324px;
   height: 324px;
-  display: flex;
-  justify-content: center;
-  border-radius: 5px;
 }
-.thepopularones .container2 div h3 {
+section .top h3 {
   display: flex;
   justify-content: center;
   color: #000;
   font-family: kalnia;
-  font-size: 32px;
+  font-size: 29px;
   font-weight: 400;
-  margin-top: 27px;
-  margin-bottom: 97px;
+  margin-top: 34px;
+  margin-bottom: 24px;
 }
-.thepopularones .but {
-  display: flex;
-  justify-content: center;
-}
-.thepopularones .but button {
-  width: 235px;
-  height: 60px;
-  border-radius: 5px;
-  background: rgb(6, 41, 66);
+section .top button {
+  width: 324px;
+  height: 68px;
+  border-radius: 20px;
+  background: #24253c;
   border: 0;
+  cursor: pointer;
+}
+section .top button a {
+  text-decoration: none;
   color: #fff;
   font-family: kalnia;
-  font-size: 32px;
+  font-size: 30px;
+  font-weight: 400;
+}
+section .middle {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  margin-top: 205px;
+}
+section .middle img {
+  width: 324px;
+  height: 324px;
+}
+section .middle h3 {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-family: kalnia;
+  font-size: 29px;
+  font-weight: 400;
+  margin-top: 34px;
+  margin-bottom: 24px;
+}
+section .middle button {
+  width: 324px;
+  height: 68px;
+  border-radius: 20px;
+  background: #24253c;
+  border: 0;
+  cursor: pointer;
+}
+section .middle button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: kalnia;
+  font-size: 30px;
+  font-weight: 400;
+}
+section .bottom {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  margin-top: 205px;
+}
+section .bottom img {
+  width: 324px;
+  height: 324px;
+}
+section .bottom h3 {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-family: kalnia;
+  font-size: 29px;
+  font-weight: 400;
+  margin-top: 34px;
+  margin-bottom: 24px;
+}
+section .bottom button {
+  width: 324px;
+  height: 68px;
+  border-radius: 20px;
+  background: #24253c;
+  border: 0;
+  cursor: pointer;
+}
+section .bottom button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: kalnia;
+  font-size: 30px;
+  font-weight: 400;
+}
+section .cube {
+  display: flex;
+  justify-content: center;
+  margin-top: 134px;
+  gap: 8px;
+  margin-bottom: 190px;
+}
+section .cube .cube1 {
+  width: 40px;
+  height: 40px;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-family: kalnia;
+  font-size: 20px;
   font-weight: 400;
   cursor: pointer;
-  transition: 0.3s;
-  margin-bottom: 99px;
 }
-.thepopularones .but button:hover {
-  font-size: 36px;
-  border-radius: 15px;
+section .cube .cube2 {
+  width: 40px;
+  height: 40px;
+  background: rgba(217, 217, 217, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-family: kalnia;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+section .cube .cube3 {
+  width: 40px;
+  height: 40px;
+  background: rgba(217, 217, 217, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-family: kalnia;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 footer {
@@ -232,6 +305,9 @@ footer {
 footer .left {
   padding-left: 35px;
   padding-top: 17px;
+}
+footer .left a {
+  text-decoration: none;
 }
 footer .left img {
   width: 323px;
@@ -327,4 +403,4 @@ footer .icons a i {
   margin-left: 26px;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=Restaurants.css.map */

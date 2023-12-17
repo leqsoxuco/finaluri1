@@ -32,7 +32,7 @@ section {
     border-top-left-radius: 20px;
     background-image: url(photos/gif.gif);
     h1 {
-      color: #ffffff;
+      color: #fff;
       font-size: 35px;
       font-family: Georgia, "Times New Roman", Times, serif;
       font-weight: 600;
@@ -69,7 +69,7 @@ section {
     label {
       margin-left: 30px;
       font-family: Georgia, "Times New Roman", Times, serif;
-      color: #ffffff;
+      color: #fff;
       font-size: 25px;
       font-weight: 700;
     }
@@ -81,7 +81,7 @@ section {
       width: 270px;
       height: 40px;
       border-radius: 5px;
-      border: 1px solid rgb(255, 255, 255);
+      border: 1px solid #fff;
       padding: 15px;
       background-color: rgba(83, 73, 73, 0.712);
     }
@@ -112,7 +112,7 @@ section {
 }
 a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 button {
   padding: 25px;
@@ -127,10 +127,10 @@ button {
   cursor: pointer;
   font-weight: 700;
   font-size: 25px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid #fff;
   transition: 0.3s;
   a {
-    color: rgb(255, 255, 255);
+    color: #fff;
   }
   &:hover {
     background-color: #0b2538cc;
@@ -150,10 +150,10 @@ button {
   }
 }
 ::placeholder {
-  color: #ffffff;
+  color: #fff;
 }
 #preloader {
-  background: #ffffff url(photos/LOADING.gif) no-repeat center center;
+  background: #fff url(photos/LOADING.gif) no-repeat center center;
   background-size: 10%;
   height: 100vh;
   width: 100%;

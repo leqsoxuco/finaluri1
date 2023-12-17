@@ -33,7 +33,7 @@ section {
   background-image: url(photos/gif.gif);
 }
 .sign .img1 h1 {
-  color: #ffffff;
+  color: #fff;
   font-size: 35px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
@@ -73,7 +73,7 @@ section {
   display: flex;
   margin-top: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #ffffff;
+  color: #fff;
   font-size: 25px;
   font-weight: 700;
 }
@@ -84,7 +84,7 @@ section {
   width: 270px;
   height: 40px;
   border-radius: 5px;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid #fff;
   padding: 15px;
   background-color: rgba(83, 73, 73, 0.712);
   font-weight: 600;
@@ -119,7 +119,7 @@ section {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 button {
@@ -137,11 +137,11 @@ button {
   cursor: pointer;
   font-weight: 700;
   font-size: 25px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid #fff;
   transition: 0.3s;
 }
 button a {
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 button:hover {
   background-color: rgba(11, 37, 56, 0.8);
@@ -157,16 +157,12 @@ button:hover {
   margin-bottom: 90px;
 }
 
-::-moz-placeholder {
-  color: #ffffff;
-}
-
 ::placeholder {
-  color: #ffffff;
+  color: #fff;
 }
 
 #preloader {
-  background: #ffffff url(photos/LOADING.gif) no-repeat center center;
+  background: #fff url(photos/LOADING.gif) no-repeat center center;
   background-size: 10%;
   height: 100vh;
   width: 100%;
@@ -176,4 +172,6 @@ button:hover {
 
 iframe {
   display: none;
-}/*# sourceMappingURL=signup.css.map */
+}
+
+/*# sourceMappingURL=signup.css.map */
