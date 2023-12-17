@@ -52,36 +52,52 @@ table {
 
 body {
   background-color: rgb(249, 234, 219);
+  animation: transitionIn 0.75s;
 }
 
-.container {
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+header {
+  position: fixed;
+  width: 100%;
+}
+header .container {
   height: 100px;
+  background-color: rgb(249, 234, 219);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.container img {
+header .container img {
   width: 370px;
   height: 95px;
   margin-left: 90px;
 }
-.container ul {
+header .container ul {
   display: flex;
   color: #000;
   font-size: 25px;
   font-weight: 400;
 }
-.container ul .link {
+header .container ul .link {
   margin-right: 45px;
   font-family: Kalnia;
 }
-.container ul .link a {
+header .container ul .link a {
   color: rgba(11, 37, 56, 0.8);
   text-decoration: none;
   position: relative;
   padding-bottom: 0.75rem;
 }
-.container ul .link a::after {
+header .container ul .link a::after {
   content: "";
   position: absolute;
   height: 2px;
@@ -91,16 +107,17 @@ body {
   background-color: rgba(11, 37, 56, 0.8);
   transition: all 0.3s ease;
 }
-.container ul .link a:hover::after {
+header .container ul .link a:hover::after {
   width: 70%;
 }
-.container i {
+header .container i {
   margin-right: 96px;
   font-size: 25px;
   color: rgba(11, 37, 56, 0.8);
 }
 
 .story {
+  padding-top: 100px;
   width: 100%;
   height: 615px;
   background-image: url(photos/mainpic.jpg);
@@ -236,6 +253,9 @@ footer .left {
 footer .left img {
   width: 323px;
   height: 104px;
+}
+footer .left a {
+  text-decoration: none;
 }
 footer .left ul {
   margin-top: 44px;

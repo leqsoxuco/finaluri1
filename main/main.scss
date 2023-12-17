@@ -3,54 +3,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&family=Kaushan+Script&family=Noto+Serif+Georgian:wght@500;600;700;800&family=Outfit&display=swap");
 body {
   background-color: rgb(249, 234, 219);
+  animation: transitionIn 0.75s;
 }
-.container {
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  img {
-    width: 370px;
-    height: 95px;
-    margin-left: 90px;
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-  ul {
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+header {
+  position: fixed;
+  width: 100%;
+  .container {
+    height: 100px;
+    background-color: rgb(249, 234, 219);
     display: flex;
-    color: #000;
-    font-size: 25px;
-    font-weight: 400;
+    justify-content: space-between;
+    align-items: center;
 
-    .link {
-      margin-right: 45px;
-      font-family: Kalnia;
-      a {
-        color: $darkblue;
-        text-decoration: none;
-        position: relative;
-        padding-bottom: 0.75rem;
-      }
-      a::after {
-        content: "";
-        position: absolute;
-        height: 2px;
-        width: 0px;
-        bottom: 0;
-        left: 0;
-        background-color: $darkblue;
-        transition: all 0.3s ease;
-      }
-      a:hover::after {
-        width: 70%;
+    img {
+      width: 370px;
+      height: 95px;
+      margin-left: 90px;
+    }
+    ul {
+      display: flex;
+      color: #000;
+      font-size: 25px;
+      font-weight: 400;
+
+      .link {
+        margin-right: 45px;
+        font-family: Kalnia;
+        a {
+          color: $darkblue;
+          text-decoration: none;
+          position: relative;
+          padding-bottom: 0.75rem;
+        }
+        a::after {
+          content: "";
+          position: absolute;
+          height: 2px;
+          width: 0px;
+          bottom: 0;
+          left: 0;
+          background-color: $darkblue;
+          transition: all 0.3s ease;
+        }
+        a:hover::after {
+          width: 70%;
+        }
       }
     }
-  }
-  i {
-    margin-right: 96px;
-    font-size: 25px;
-    color: $darkblue;
+    i {
+      margin-right: 96px;
+      font-size: 25px;
+      color: $darkblue;
+    }
   }
 }
+
 .story {
+  padding-top: 100px;
   width: 100%;
   height: 615px;
   background-image: url(photos/mainpic.jpg);
