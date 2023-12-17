@@ -201,6 +201,7 @@ section {
       margin-top: 34px;
       margin-bottom: 24px;
       width: 324px;
+      text-align: center;
     }
     button {
       width: 324px;
@@ -306,7 +307,12 @@ footer {
   .help {
     margin-top: 61px;
     margin-left: 278px;
-
+    img {
+      width: 323px;
+      height: 115px;
+      margin-top: 10px;
+      margin-left: -10px;
+    }
     h2 {
       color: #000;
       font-family: Kaushan Script;
@@ -332,7 +338,7 @@ footer {
   }
   .contact {
     margin-top: 61px;
-    margin-left: 183px;
+    margin-left: 140px;
     h2 {
       color: #000;
       font-family: Kaushan Script;

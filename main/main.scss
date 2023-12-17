@@ -177,6 +177,10 @@ header {
   .but {
     display: flex;
     justify-content: center;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
     button {
       width: 235px;
       height: 60px;
@@ -241,7 +245,12 @@ footer {
   .help {
     margin-top: 61px;
     margin-left: 278px;
-
+    img {
+      width: 323px;
+      height: 115px;
+      margin-top: 10px;
+      margin-left: -10px;
+    }
     h2 {
       color: #000;
       font-family: Kaushan Script;
@@ -267,7 +276,7 @@ footer {
   }
   .contact {
     margin-top: 61px;
-    margin-left: 183px;
+    margin-left: 140px;
     h2 {
       color: #000;
       font-family: Kaushan Script;
