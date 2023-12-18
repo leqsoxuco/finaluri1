@@ -1,5 +1,5 @@
-@use "../main/index.scss" as *;
-@use "../sign/_mixin.scss" as *;
+@use "../../main/index.scss" as *;
+@use "../../sign/_mixin.scss" as *;
 @import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&family=Noto+Serif+Georgian:wght@500;600;700;800&family=Outfit&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&family=Kaushan+Script&family=Noto+Serif+Georgian:wght@500;600;700;800&family=Outfit&display=swap");
 body {
@@ -25,7 +25,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     img {
       width: 370px;
       height: 95px;
@@ -68,11 +67,11 @@ header {
     }
   }
 }
-.Restaurants {
+.NarikalaFortress {
   padding-top: 100px;
   width: 100%;
   height: 615px;
-  background-image: url(photos/background.jpg);
+  background-image: url(photos/back.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -87,172 +86,118 @@ header {
     padding-top: 193px;
   }
 }
-section {
-  .textline {
-    @include flex;
-    .rightline {
-      width: 253px;
-      height: 1px;
-      background-color: #000;
-      margin-left: 13px;
-    }
-    .leftline {
-      width: 253px;
-      height: 1px;
-      background-color: #000;
-      margin-right: 13px;
-    }
-    h2 {
-      display: flex;
-      justify-content: center;
-      color: #000;
-      font-family: kalnia;
-      font-size: 36px;
-      margin-top: 98px;
-      font-weight: 400;
-      margin-bottom: 102px;
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .minicontainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 107px 90px 118px 90px;
+    .left,
+    .right {
+      h3 {
+        color: #000;
+        font-family: kalnia;
+        font-size: 25px;
+        font-weight: 400;
+      }
     }
   }
-  .top {
+  .container {
+    margin-left: 83px;
     display: flex;
     justify-content: center;
-    gap: 45px;
-    img {
-      width: 324px;
-      height: 324px;
-    }
-    h3 {
-      display: flex;
-      justify-content: center;
-      color: #000;
-      font-family: kalnia;
-      font-size: 29px;
-      font-weight: 400;
-      margin-top: 34px;
-      margin-bottom: 48px;
-    }
-    a {
-      text-decoration: none;
-      color: #fff;
-      font-family: kalnia;
-      font-size: 30px;
-      font-weight: 400;
-      padding: 15px 88px;
-      border-radius: 20px;
-      background: #24253c;
-      border: 0;
-      cursor: pointer;
-    }
-  }
-  .middle {
-    display: flex;
-    justify-content: center;
-    gap: 45px;
-    margin-top: 190px;
-    img {
-      width: 324px;
-      height: 324px;
-    }
-    h3 {
-      display: flex;
-      justify-content: center;
-      color: #000;
-      font-family: kalnia;
-      font-size: 29px;
-      font-weight: 400;
-      margin-top: 34px;
-      margin-bottom: 48px;
-    }
+    margin-bottom: 248px;
+    .left {
+      #bigpic {
+        width: 599px;
+        height: 555px;
+      }
+      .bot {
+        margin-top: 39px;
 
-    a {
-      text-decoration: none;
-      color: #fff;
-      font-family: kalnia;
-      font-size: 30px;
-      font-weight: 400;
-      padding: 15px 88px;
-      border-radius: 20px;
-      background: #24253c;
-      border: 0;
-      cursor: pointer;
+        #smallpic {
+          width: 149px;
+          height: 158px;
+        }
+        #secondpic {
+          width: 149px;
+          height: 158px;
+          margin-left: 29px;
+        }
+      }
     }
-  }
-  .bottom {
-    display: flex;
-    justify-content: center;
-    gap: 45px;
-    margin-top: 190px;
-    img {
-      width: 324px;
-      height: 324px;
-    }
-    h3 {
-      display: flex;
-      justify-content: center;
-      color: #000;
-      font-family: kalnia;
-      font-size: 29px;
-      font-weight: 400;
-      margin-top: 34px;
-      margin-bottom: 48px;
-      width: 324px;
-      text-align: center;
-    }
-    a {
-      text-decoration: none;
-      color: #fff;
-      font-family: kalnia;
-      font-size: 30px;
-      font-weight: 400;
-      padding: 15px 88px;
-      border-radius: 20px;
-      background: #24253c;
-      border: 0;
-      cursor: pointer;
-    }
-    #mtop {
-      margin-bottom: 78px;
-    }
-  }
-
-  .cube {
-    display: flex;
-    justify-content: center;
-    margin-top: 134px;
-    gap: 8px;
-    margin-bottom: 190px;
-    .cube1 {
-      width: 40px;
-      height: 40px;
-      background-color: #d9d9d9;
-      @include flex;
-      color: #000;
-      font-family: kalnia;
-      font-size: 20px;
-      font-weight: 400;
-      cursor: pointer;
-    }
-    .cube2 {
-      width: 40px;
-      height: 40px;
-      background: rgba(217, 217, 217, 0.5);
-      @include flex;
-      color: #000;
-      font-family: kalnia;
-      font-size: 20px;
-      font-weight: 400;
-      cursor: pointer;
-    }
-    .cube3 {
-      width: 40px;
-      height: 40px;
-      background: rgba(217, 217, 217, 0.5);
-      @include flex;
-      color: #000;
-      font-family: kalnia;
-      font-size: 20px;
-      font-weight: 400;
-      cursor: pointer;
+    .right {
+      margin-left: 74px;
+      h2 {
+        color: #000;
+        font-family: Metal;
+        font-size: 64px;
+        font-weight: 400;
+        margin-bottom: 30px;
+      }
+      p {
+        width: 683px;
+        height: 222px;
+        color: #000;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 270px;
+        line-height: 1.25;
+      }
+      .butandfav {
+        display: flex;
+        align-items: center;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          color: #fff;
+          font-family: kalnia;
+          font-size: 36px;
+          font-weight: 400;
+          width: 426.617px;
+          height: 76px;
+          border-radius: 20px;
+          background: #24253c;
+          border: 0;
+          cursor: pointer;
+          margin-right: 22px;
+        }
+        .heart-checkbox {
+          input[type="checkbox"] {
+            display: none;
+            &:checked {
+              + {
+                label {
+                  &::before {
+                    color: #fff;
+                    background-color: #ff0000;
+                  }
+                }
+              }
+            }
+          }
+          label {
+            display: inline-block;
+            cursor: pointer;
+            &::before {
+              content: "\f004";
+              font-family: "Font Awesome 5 Free";
+              font-size: 30px;
+              color: #24253c;
+              cursor: pointer;
+              transition: color 0.3s;
+              transition: background-color 0.1s;
+              padding: 10px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
     }
   }
 }
