@@ -129,29 +129,26 @@ section {
       font-size: 29px;
       font-weight: 400;
       margin-top: 34px;
-      margin-bottom: 24px;
+      margin-bottom: 48px;
     }
-    button {
-      width: 324px;
-      height: 68px;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-family: kalnia;
+      font-size: 30px;
+      font-weight: 400;
+      padding: 15px 88px;
       border-radius: 20px;
       background: #24253c;
       border: 0;
       cursor: pointer;
-      a {
-        text-decoration: none;
-        color: #fff;
-        font-family: kalnia;
-        font-size: 30px;
-        font-weight: 400;
-      }
     }
   }
   .middle {
     display: flex;
     justify-content: center;
     gap: 45px;
-    margin-top: 205px;
+    margin-top: 190px;
     img {
       width: 324px;
       height: 324px;
@@ -164,29 +161,26 @@ section {
       font-size: 29px;
       font-weight: 400;
       margin-top: 34px;
-      margin-bottom: 24px;
+      margin-bottom: 48px;
     }
-    button {
-      width: 324px;
-      height: 68px;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-family: kalnia;
+      font-size: 30px;
+      font-weight: 400;
+      padding: 15px 88px;
       border-radius: 20px;
       background: #24253c;
       border: 0;
       cursor: pointer;
-      a {
-        text-decoration: none;
-        color: #fff;
-        font-family: kalnia;
-        font-size: 30px;
-        font-weight: 400;
-      }
     }
   }
   .bottom {
     display: flex;
     justify-content: center;
     gap: 45px;
-    margin-top: 205px;
+    margin-top: 190px;
     img {
       width: 324px;
       height: 324px;
@@ -199,23 +193,20 @@ section {
       font-size: 29px;
       font-weight: 400;
       margin-top: 34px;
-      margin-bottom: 24px;
+      margin-bottom: 48px;
       width: 324px;
     }
-    button {
-      width: 324px;
-      height: 68px;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-family: kalnia;
+      font-size: 30px;
+      font-weight: 400;
+      padding: 15px 88px;
       border-radius: 20px;
       background: #24253c;
       border: 0;
       cursor: pointer;
-      a {
-        text-decoration: none;
-        color: #fff;
-        font-family: kalnia;
-        font-size: 30px;
-        font-weight: 400;
-      }
     }
   }
 
@@ -268,27 +259,26 @@ footer {
   .left {
     padding-left: 35px;
     padding-top: 17px;
-    a {
-      text-decoration: none;
-    }
+    display: flex;
+    flex-direction: column;
     img {
       width: 323px;
       height: 104px;
     }
-    ul {
-      margin-top: 44px;
-      li {
-        color: #000;
-        font-family: Georgia, "Times New Roman", Times, serif;
-        font-size: 20px;
-        font-weight: 400;
-        margin-top: 17px;
-        cursor: pointer;
-      }
+    a {
+      text-decoration: none;
+      display: flex;
+      color: #000;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 17px;
+      cursor: pointer;
     }
+
     .loc {
       display: flex;
-      margin-top: 29px;
+      margin-top: 39px;
       i {
         margin-right: 14px;
       }
@@ -348,20 +338,16 @@ footer {
       background-color: #000;
       margin-bottom: 23px;
     }
-    ul {
+    a {
       display: flex;
       flex-direction: column;
-      a {
-        text-decoration: none;
-        li {
-          color: #000;
-          font-family: Georgia, "Times New Roman", Times, serif;
-          font-size: 20px;
-          font-weight: 400;
-          margin-top: 17px;
-          cursor: pointer;
-        }
-      }
+      text-decoration: none;
+      color: #000;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 17px;
+      cursor: pointer;
     }
   }
   .icons {

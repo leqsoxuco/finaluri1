@@ -179,28 +179,25 @@ section .top h3 {
   font-size: 29px;
   font-weight: 400;
   margin-top: 34px;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
-section .top button {
-  width: 324px;
-  height: 68px;
-  border-radius: 20px;
-  background: #24253c;
-  border: 0;
-  cursor: pointer;
-}
-section .top button a {
+section .top a {
   text-decoration: none;
   color: #fff;
   font-family: kalnia;
   font-size: 30px;
   font-weight: 400;
+  padding: 15px 88px;
+  border-radius: 20px;
+  background: #24253c;
+  border: 0;
+  cursor: pointer;
 }
 section .middle {
   display: flex;
   justify-content: center;
   gap: 45px;
-  margin-top: 205px;
+  margin-top: 190px;
 }
 section .middle img {
   width: 324px;
@@ -214,28 +211,25 @@ section .middle h3 {
   font-size: 29px;
   font-weight: 400;
   margin-top: 34px;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
-section .middle button {
-  width: 324px;
-  height: 68px;
-  border-radius: 20px;
-  background: #24253c;
-  border: 0;
-  cursor: pointer;
-}
-section .middle button a {
+section .middle a {
   text-decoration: none;
   color: #fff;
   font-family: kalnia;
   font-size: 30px;
   font-weight: 400;
+  padding: 15px 88px;
+  border-radius: 20px;
+  background: #24253c;
+  border: 0;
+  cursor: pointer;
 }
 section .bottom {
   display: flex;
   justify-content: center;
   gap: 45px;
-  margin-top: 205px;
+  margin-top: 190px;
 }
 section .bottom img {
   width: 324px;
@@ -249,22 +243,20 @@ section .bottom h3 {
   font-size: 29px;
   font-weight: 400;
   margin-top: 34px;
-  margin-bottom: 24px;
-}
-section .bottom button {
+  margin-bottom: 48px;
   width: 324px;
-  height: 68px;
-  border-radius: 20px;
-  background: #24253c;
-  border: 0;
-  cursor: pointer;
 }
-section .bottom button a {
+section .bottom a {
   text-decoration: none;
   color: #fff;
   font-family: kalnia;
   font-size: 30px;
   font-weight: 400;
+  padding: 15px 88px;
+  border-radius: 20px;
+  background: #24253c;
+  border: 0;
+  cursor: pointer;
 }
 section .cube {
   display: flex;
@@ -322,18 +314,16 @@ footer {
 footer .left {
   padding-left: 35px;
   padding-top: 17px;
-}
-footer .left a {
-  text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 footer .left img {
   width: 323px;
   height: 104px;
 }
-footer .left ul {
-  margin-top: 44px;
-}
-footer .left ul li {
+footer .left a {
+  text-decoration: none;
+  display: flex;
   color: #000;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
@@ -343,7 +333,7 @@ footer .left ul li {
 }
 footer .left .loc {
   display: flex;
-  margin-top: 29px;
+  margin-top: 39px;
 }
 footer .left .loc i {
   margin-right: 14px;
@@ -401,14 +391,10 @@ footer .contact .line {
   background-color: #000;
   margin-bottom: 23px;
 }
-footer .contact ul {
+footer .contact a {
   display: flex;
   flex-direction: column;
-}
-footer .contact ul a {
   text-decoration: none;
-}
-footer .contact ul a li {
   color: #000;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;

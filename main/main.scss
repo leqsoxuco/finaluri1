@@ -91,34 +91,27 @@ header {
   .button {
     display: flex;
     justify-content: center;
-    button {
+    a {
+      color: #fff;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 22px;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      transition: 0.3s;
       width: 227px;
       height: 55px;
-      flex-shrink: 0;
       border-radius: 8px;
       background: rgb(11, 37, 56);
       border: 0;
       transition: 0.3s;
-
-      a {
-        color: #fff;
-        font-family: Jomolhari;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-        transition: 0.3s;
-      }
     }
   }
-  button:hover {
+  a:hover {
     background-color: rgba(11, 37, 56, 0.897);
-    a {
-      font-size: 25px;
-    }
+    font-size: 25px;
   }
 }
 .thepopularones {
@@ -179,26 +172,25 @@ header {
     justify-content: center;
     a {
       text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: #fff;
-    }
-    button {
       width: 235px;
       height: 60px;
       border-radius: 5px;
       background: rgb(6, 41, 66);
       border: 0;
-      color: #fff;
       font-family: kalnia;
       font-size: 32px;
       font-weight: 400;
       cursor: pointer;
       transition: 0.3s;
       margin-bottom: 99px;
-
-      &:hover {
-        font-size: 36px;
-        border-radius: 15px;
-      }
+    }
+    a:hover {
+      font-size: 36px;
+      border-radius: 15px;
     }
   }
 }
@@ -210,27 +202,26 @@ footer {
   .left {
     padding-left: 35px;
     padding-top: 17px;
+    display: flex;
+    flex-direction: column;
     img {
       width: 323px;
       height: 104px;
     }
     a {
       text-decoration: none;
+      display: flex;
+      color: #000;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 17px;
+      cursor: pointer;
     }
-    ul {
-      margin-top: 44px;
-      li {
-        color: #000;
-        font-family: Georgia, "Times New Roman", Times, serif;
-        font-size: 20px;
-        font-weight: 400;
-        margin-top: 17px;
-        cursor: pointer;
-      }
-    }
+
     .loc {
       display: flex;
-      margin-top: 29px;
+      margin-top: 39px;
       i {
         margin-right: 14px;
       }
@@ -290,20 +281,16 @@ footer {
       background-color: #000;
       margin-bottom: 23px;
     }
-    ul {
+    a {
       display: flex;
       flex-direction: column;
-      a {
-        text-decoration: none;
-        li {
-          color: #000;
-          font-family: Georgia, "Times New Roman", Times, serif;
-          font-size: 20px;
-          font-weight: 400;
-          margin-top: 17px;
-          cursor: pointer;
-        }
-      }
+      text-decoration: none;
+      color: #000;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 17px;
+      cursor: pointer;
     }
   }
   .icons {

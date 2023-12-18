@@ -178,13 +178,6 @@ section .container .right h2 {
   font-weight: 400;
   margin-bottom: 30px;
 }
-section .container .right h3 {
-  color: #000;
-  font-family: kalnia;
-  font-size: 40px;
-  font-weight: 400;
-  margin-bottom: 27px;
-}
 section .container .right p {
   width: 683px;
   height: 222px;
@@ -192,13 +185,22 @@ section .container .right p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 25px;
   font-weight: 400;
-  margin-bottom: 200px;
+  margin-bottom: 270px;
+  line-height: 1.25;
 }
 section .container .right .butandfav {
   display: flex;
   align-items: center;
 }
-section .container .right .butandfav button {
+section .container .right .butandfav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: kalnia;
+  font-size: 36px;
+  font-weight: 400;
   width: 426.617px;
   height: 76px;
   border-radius: 20px;
@@ -206,13 +208,6 @@ section .container .right .butandfav button {
   border: 0;
   cursor: pointer;
   margin-right: 22px;
-}
-section .container .right .butandfav button a {
-  text-decoration: none;
-  color: #fff;
-  font-family: kalnia;
-  font-size: 36px;
-  font-weight: 400;
 }
 section .container .right .butandfav .heart-checkbox input[type=checkbox] {
   display: none;
@@ -246,18 +241,16 @@ footer {
 footer .left {
   padding-left: 35px;
   padding-top: 17px;
-}
-footer .left a {
-  text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 footer .left img {
   width: 323px;
   height: 104px;
 }
-footer .left ul {
-  margin-top: 44px;
-}
-footer .left ul li {
+footer .left a {
+  text-decoration: none;
+  display: flex;
   color: #000;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
@@ -267,7 +260,7 @@ footer .left ul li {
 }
 footer .left .loc {
   display: flex;
-  margin-top: 29px;
+  margin-top: 39px;
 }
 footer .left .loc i {
   margin-right: 14px;
@@ -325,14 +318,10 @@ footer .contact .line {
   background-color: #000;
   margin-bottom: 23px;
 }
-footer .contact ul {
+footer .contact a {
   display: flex;
   flex-direction: column;
-}
-footer .contact ul a {
   text-decoration: none;
-}
-footer .contact ul a li {
   color: #000;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
