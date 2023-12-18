@@ -1,0 +1,315 @@
+@use "../../main/index.scss" as *;
+@use "../../sign/_mixin.scss" as *;
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&family=Noto+Serif+Georgian:wght@500;600;700;800&family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&family=Kaushan+Script&family=Noto+Serif+Georgian:wght@500;600;700;800&family=Outfit&display=swap");
+body {
+  background-color: rgb(249, 234, 219);
+  animation: transitionIn 0.75s;
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+header {
+  position: fixed;
+  width: 100%;
+  .container {
+    height: 100px;
+    background-color: rgb(249, 234, 219);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 370px;
+      height: 95px;
+      margin-left: 90px;
+    }
+    ul {
+      display: flex;
+      color: #000;
+      font-size: 25px;
+      font-weight: 400;
+
+      .link {
+        margin-right: 45px;
+        font-family: Kalnia;
+        a {
+          color: $darkblue;
+          text-decoration: none;
+          position: relative;
+          padding-bottom: 0.75rem;
+        }
+        a::after {
+          content: "";
+          position: absolute;
+          height: 2px;
+          width: 0px;
+          bottom: 0;
+          left: 0;
+          background-color: $darkblue;
+          transition: all 0.3s ease;
+        }
+        a:hover::after {
+          width: 70%;
+        }
+      }
+    }
+    i {
+      margin-right: 96px;
+      font-size: 25px;
+      color: $darkblue;
+    }
+  }
+}
+.eastpoint {
+  padding-top: 100px;
+  width: 100%;
+  height: 615px;
+  background-image: url(photos/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    color: #fff;
+    text-align: center;
+    font-family: kalnia;
+    font-size: 70px;
+    font-weight: 700;
+    padding-top: 250px;
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .minicontainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 107px 90px 118px 90px;
+    .left,
+    .right {
+      h3 {
+        color: #000;
+        font-family: kalnia;
+        font-size: 25px;
+        font-weight: 400;
+      }
+    }
+  }
+  .container {
+    margin-left: 83px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 248px;
+    .left {
+      #bigpic {
+        width: 599px;
+        height: 555px;
+      }
+      .bot {
+        margin-top: 39px;
+
+        #smallpic {
+          width: 149px;
+          height: 158px;
+        }
+        #secondpic {
+          width: 149px;
+          height: 158px;
+          margin-left: 29px;
+        }
+      }
+    }
+    .right {
+      margin-left: 74px;
+      h2 {
+        color: #000;
+        font-family: Metal;
+        font-size: 64px;
+        font-weight: 400;
+        margin-bottom: 30px;
+      }
+      p {
+        width: 683px;
+        height: 222px;
+        color: #000;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 325px;
+        line-height: 1.25;
+      }
+      .butandfav {
+        display: flex;
+        align-items: center;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          color: #fff;
+          font-family: kalnia;
+          font-size: 36px;
+          font-weight: 400;
+          width: 426.617px;
+          height: 76px;
+          border-radius: 20px;
+          background: #24253c;
+          border: 0;
+          cursor: pointer;
+          margin-right: 22px;
+        }
+        .heart-checkbox {
+          input[type="checkbox"] {
+            display: none;
+            &:checked {
+              + {
+                label {
+                  &::before {
+                    color: #fff;
+                    background-color: #ff0000;
+                  }
+                }
+              }
+            }
+          }
+          label {
+            display: inline-block;
+            cursor: pointer;
+            &::before {
+              content: "\f004";
+              font-family: "Font Awesome 5 Free";
+              font-size: 30px;
+              color: #24253c;
+              cursor: pointer;
+              transition: color 0.3s;
+              transition: background-color 0.1s;
+              padding: 10px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  width: 100%;
+  height: 327px;
+  background-color: #e4e4e4;
+  display: flex;
+  justify-content: center;
+  .left {
+    padding-left: 35px;
+    padding-top: 17px;
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 323px;
+      height: 104px;
+    }
+    a {
+      text-decoration: none;
+      display: flex;
+      color: #000;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 17px;
+      cursor: pointer;
+    }
+
+    .loc {
+      display: flex;
+      margin-top: 39px;
+      i {
+        margin-right: 14px;
+      }
+      h2 {
+        color: #000;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+  .help {
+    margin-top: 61px;
+    margin-left: 278px;
+    img {
+      width: 323px;
+      height: 115px;
+      margin-top: 10px;
+      margin-left: -10px;
+    }
+    h2 {
+      color: #000;
+      font-family: Kaushan Script;
+      font-size: 25px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    .helpline {
+      width: 173.003px;
+      height: 1px;
+      background-color: #000;
+      margin-bottom: 23px;
+    }
+    ul {
+      li {
+        color: #000;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
+      }
+    }
+  }
+  .contact {
+    margin-top: 61px;
+    margin-left: 140px;
+    h2 {
+      color: #000;
+      font-family: Kaushan Script;
+      font-size: 25px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    .line {
+      width: 173.003px;
+      height: 1px;
+      background-color: #000;
+      margin-bottom: 23px;
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: #000;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 17px;
+      cursor: pointer;
+    }
+  }
+  .icons {
+    margin-top: 47px;
+    margin-left: 54px;
+    a {
+      i {
+        font-size: 30px;
+        color: #000;
+        margin-left: 26px;
+      }
+    }
+  }
+}
