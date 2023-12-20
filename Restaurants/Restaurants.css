@@ -70,16 +70,56 @@ header {
   width: 100%;
 }
 header .container {
-  height: 100px;
+  height: 12.936610608vh;
   background-color: rgb(249, 234, 219);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+header .container input[type=checkbox] {
+  display: none;
+}
+header .container input:checked ~ ul {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  gap: 7px;
+  font-size: 12px;
+}
+header .container .bar {
+  display: none;
+}
+@media (width <= 380px) {
+  header .container .bar {
+    display: block;
+  }
+}
+header .container .bar .fa-solid {
+  font-size: 40px;
+}
 header .container img {
   width: 23.125vw;
   height: 12.2897800776vh;
-  margin-left: 90px;
+  gap: 90px;
+}
+@media (width <= 768px) {
+  header .container img {
+    margin-left: 15px;
+    width: 20vw;
+    height: 10vh;
+  }
+}
+@media (width <= 425px) {
+  header .container img {
+    margin-left: 5px;
+    width: 30vw;
+    height: 9vh;
+  }
+}
+@media (width <= 380px) {
+  header .container img {
+    width: 200px;
+  }
 }
 header .container ul {
   display: flex;
@@ -87,9 +127,35 @@ header .container ul {
   font-size: 25px;
   font-weight: 400;
 }
+@media (width <= 768px) {
+  header .container ul {
+    font-size: 17px;
+  }
+}
+@media (width <= 425px) {
+  header .container ul {
+    font-size: 11px;
+    justify-content: space-around;
+  }
+}
+@media (width <= 380px) {
+  header .container ul {
+    display: none;
+  }
+}
 header .container ul .link {
   margin-right: 45px;
   font-family: Kalnia;
+}
+@media (width <= 768px) {
+  header .container ul .link {
+    margin-right: 20px;
+  }
+}
+@media (width <= 425px) {
+  header .container ul .link {
+    margin-right: 10px;
+  }
 }
 header .container ul .link a {
   color: rgba(11, 37, 56, 0.8);
@@ -115,6 +181,13 @@ header .container i {
   font-size: 25px;
   color: rgba(11, 37, 56, 0.8);
 }
+@media (width <= 425px) {
+  header .container i {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 
 .Restaurants {
   padding-top: 100px;
@@ -133,6 +206,16 @@ header .container i {
   font-size: 70px;
   font-weight: 700;
   padding-top: 193px;
+}
+@media (width <= 425px) {
+  .Restaurants h2 {
+    font-size: 50px;
+  }
+}
+@media (width <= 380px) {
+  .Restaurants h2 {
+    font-size: 45px;
+  }
 }
 
 section .textline {
@@ -167,9 +250,31 @@ section .top {
   justify-content: center;
   gap: 45px;
 }
+@media (width <= 768px) {
+  section .top {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 section .top img {
   width: 20.25vw;
   height: 41.7852522639vh;
+}
+@media (width <= 768px) {
+  section .top img {
+    width: 37vw;
+    align-items: center;
+  }
+}
+@media (width <= 425px) {
+  section .top img {
+    width: 69vw;
+  }
+}
+@media (width <= 380px) {
+  section .top img {
+    width: 90vw;
+  }
 }
 section .top h3 {
   display: flex;
@@ -193,6 +298,22 @@ section .top a {
   width: 20.25vw;
   height: 8.7968952135vh;
 }
+@media (width <= 768px) {
+  section .top a {
+    margin-left: 22%;
+  }
+}
+@media (width <= 425px) {
+  section .top a {
+    width: 38.5vw;
+  }
+}
+@media (width <= 380px) {
+  section .top a {
+    width: 55vw;
+    margin-left: 20%;
+  }
+}
 section .top a p {
   color: #fff;
   font-family: kalnia;
@@ -205,9 +326,31 @@ section .middle {
   gap: 45px;
   margin-top: 190px;
 }
+@media (width <= 768px) {
+  section .middle {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 section .middle img {
   width: 20.25vw;
   height: 41.91461837vh;
+}
+@media (width <= 768px) {
+  section .middle img {
+    width: 37vw;
+    align-items: center;
+  }
+}
+@media (width <= 425px) {
+  section .middle img {
+    width: 69vw;
+  }
+}
+@media (width <= 380px) {
+  section .middle img {
+    width: 90vw;
+  }
 }
 section .middle h3 {
   display: flex;
@@ -231,6 +374,22 @@ section .middle a {
   width: 20.25vw;
   height: 8.7968952135vh;
 }
+@media (width <= 768px) {
+  section .middle a {
+    margin-left: 22%;
+  }
+}
+@media (width <= 425px) {
+  section .middle a {
+    width: 38.5vw;
+  }
+}
+@media (width <= 380px) {
+  section .middle a {
+    width: 55vw;
+    margin-left: 20%;
+  }
+}
 section .middle a p {
   color: #fff;
   font-family: kalnia;
@@ -243,9 +402,31 @@ section .bottom {
   gap: 45px;
   margin-top: 190px;
 }
+@media (width <= 768px) {
+  section .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 section .bottom img {
   width: 20.25vw;
   height: 41.91461837vh;
+}
+@media (width <= 768px) {
+  section .bottom img {
+    width: 37vw;
+    align-items: center;
+  }
+}
+@media (width <= 425px) {
+  section .bottom img {
+    width: 69vw;
+  }
+}
+@media (width <= 380px) {
+  section .bottom img {
+    width: 90vw;
+  }
 }
 section .bottom h3 {
   display: flex;
@@ -258,6 +439,23 @@ section .bottom h3 {
   margin-bottom: 48px;
   width: 20.1875vw;
 }
+@media (width <= 768px) {
+  section .bottom h3 {
+    margin-left: 22%;
+    text-align-last: center;
+    text-align: center;
+  }
+}
+@media (width <= 425px) {
+  section .bottom h3 {
+    margin-left: 35%;
+  }
+}
+@media (width <= 380px) {
+  section .bottom h3 {
+    margin-left: 38%;
+  }
+}
 section .bottom a {
   text-decoration: none;
   border-radius: 20px;
@@ -269,6 +467,22 @@ section .bottom a {
   align-items: center;
   width: 20.25vw;
   height: 8.7968952135vh;
+}
+@media (width <= 768px) {
+  section .bottom a {
+    margin-left: 22%;
+  }
+}
+@media (width <= 425px) {
+  section .bottom a {
+    width: 38.5vw;
+  }
+}
+@media (width <= 380px) {
+  section .bottom a {
+    width: 55vw;
+    margin-left: 19%;
+  }
 }
 section .bottom a p {
   color: #fff;
@@ -296,6 +510,21 @@ section .cube .cube1 {
   font-weight: 400;
   cursor: pointer;
 }
+@media (width <= 768px) {
+  section .cube .cube1 {
+    width: 4.5vw;
+  }
+}
+@media (width <= 425px) {
+  section .cube .cube1 {
+    width: 8.5vw;
+  }
+}
+@media (width <= 380px) {
+  section .cube .cube1 {
+    width: 11.5vw;
+  }
+}
 section .cube .cube2 {
   width: 2.5vw;
   height: 5.1746442432vh;
@@ -308,6 +537,21 @@ section .cube .cube2 {
   font-size: 20px;
   font-weight: 400;
   cursor: pointer;
+}
+@media (width <= 768px) {
+  section .cube .cube2 {
+    width: 4.5vw;
+  }
+}
+@media (width <= 425px) {
+  section .cube .cube2 {
+    width: 8.5vw;
+  }
+}
+@media (width <= 380px) {
+  section .cube .cube2 {
+    width: 11.5vw;
+  }
 }
 section .cube .cube3 {
   width: 2.5vw;
@@ -322,12 +566,35 @@ section .cube .cube3 {
   font-weight: 400;
   cursor: pointer;
 }
+@media (width <= 768px) {
+  section .cube .cube3 {
+    width: 4.5vw;
+  }
+}
+@media (width <= 425px) {
+  section .cube .cube3 {
+    width: 8.5vw;
+  }
+}
+@media (width <= 380px) {
+  section .cube .cube3 {
+    width: 11.5vw;
+  }
+}
 
 footer {
   width: 100%;
   height: 42.3027166882vh;
   background-color: #e4e4e4;
   display: flex;
+  justify-content: center;
+}
+@media (width <= 425px) {
+  footer {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
 }
 footer .left {
   padding-left: 35px;
@@ -335,9 +602,21 @@ footer .left {
   display: flex;
   flex-direction: column;
 }
+@media (width <= 425px) {
+  footer .left {
+    padding-left: 0px;
+    padding-top: 20px;
+    align-items: center;
+  }
+}
 footer .left img {
   width: 20.1875vw;
   height: 13.4540750323vh;
+}
+@media (width <= 425px) {
+  footer .left img {
+    width: 200px;
+  }
 }
 footer .left a {
   text-decoration: none;
@@ -366,11 +645,34 @@ footer .help {
   margin-top: 61px;
   margin-left: 278px;
 }
+@media (width <= 768px) {
+  footer .help {
+    margin-left: 50px;
+    padding-left: 0px;
+  }
+}
+@media (width <= 425px) {
+  footer .help {
+    margin-left: 0px;
+    margin-top: 30px;
+    align-items: center;
+  }
+}
 footer .help img {
-  width: 10.8126875vw;
+  width: 20.1875vw;
   height: 14.8771021992vh;
   margin-top: 10px;
   margin-left: -10px;
+}
+@media (width <= 768px) {
+  footer .help img {
+    width: 200px;
+  }
+}
+@media (width <= 425px) {
+  footer .help img {
+    width: 200px;
+  }
 }
 footer .help h2 {
   color: #000;
@@ -379,11 +681,22 @@ footer .help h2 {
   font-weight: 400;
   margin-bottom: 10px;
 }
+@media (width <= 425px) {
+  footer .help h2 {
+    display: flex;
+    justify-content: center;
+  }
+}
 footer .help .helpline {
   width: 10.8126875vw;
   height: 0.1293661061vh;
   background-color: #000;
   margin-bottom: 23px;
+}
+@media (width <= 425px) {
+  footer .help .helpline {
+    margin-left: 73px;
+  }
 }
 footer .help ul li {
   color: #000;
@@ -392,9 +705,27 @@ footer .help ul li {
   font-weight: 400;
   cursor: pointer;
 }
+@media (width <= 425px) {
+  footer .help ul li {
+    display: flex;
+    justify-content: center;
+  }
+}
 footer .contact {
   margin-top: 61px;
   margin-left: 140px;
+}
+@media (width <= 768px) {
+  footer .contact {
+    margin-left: 30px;
+  }
+}
+@media (width <= 425px) {
+  footer .contact {
+    margin-left: 0px;
+    margin-top: 30px;
+    align-items: center;
+  }
 }
 footer .contact h2 {
   color: #000;
@@ -403,11 +734,23 @@ footer .contact h2 {
   font-weight: 400;
   margin-bottom: 10px;
 }
+@media (width <= 425px) {
+  footer .contact h2 {
+    display: flex;
+    justify-content: center;
+  }
+}
 footer .contact .line {
   width: 10.8126875vw;
   height: 0.1293661061vh;
   background-color: #000;
   margin-bottom: 23px;
+}
+@media (width <= 425px) {
+  footer .contact .line {
+    display: flex;
+    margin-left: 23px;
+  }
 }
 footer .contact a {
   display: flex;
@@ -420,14 +763,38 @@ footer .contact a {
   margin-top: 17px;
   cursor: pointer;
 }
+@media (width <= 425px) {
+  footer .contact a {
+    display: flex;
+    align-items: center;
+  }
+}
 footer .icons {
   margin-top: 47px;
   margin-left: 54px;
+}
+@media (width <= 768px) {
+  footer .icons {
+    margin-left: 20px;
+  }
+}
+@media (width <= 425px) {
+  footer .icons {
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-top: 30px;
+    align-items: center;
+  }
 }
 footer .icons a i {
   font-size: 30px;
   color: #000;
   margin-left: 26px;
+}
+@media (width <= 425px) {
+  footer .icons a i {
+    margin-left: 11px;
+  }
 }
 
 /*# sourceMappingURL=Restaurants.css.map */
