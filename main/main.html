@@ -15,8 +15,12 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <nav class="container">
         <a href="#"><img src="photos/LOGO.png" alt="logo" /></a>
+        <label for="turn" class="bar">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="turn" />
         <ul>
           <li class="link">
             <a href="../Restaurants/Restaurants.html">Restaurants</a>
@@ -27,9 +31,11 @@
             >
           </li>
           <li class="link"><a href="../malls/malls.html">Malls</a></li>
+          <li>
+            <a href=""><i class="fa-regular fa-user"></i></a>
+          </li>
         </ul>
-        <a href=""><i class="fa-regular fa-user"></i></a>
-      </div>
+      </nav>
     </header>
     <section class="story">
       <h2>Get To Know Tbilisi</h2>
@@ -37,13 +43,12 @@
         <a href="../story/story.html">GET TO KNOW</a>
       </div>
     </section>
-    <section class="thepopularones">
-      <nav class="textline">
+    <section>
+      <div class="textline">
         <div class="leftline"></div>
         <h2>Most Popular</h2>
         <div class="rightline"></div>
-      </nav>
-
+      </div>
       <div class="container2">
         <div>
           <img src="photos/stamba.jpg" alt="stamba" />
@@ -58,6 +63,7 @@
           <h3>Tbilisi mall</h3>
         </div>
       </div>
+
       <div class="but">
         <a href="../Restaurants/Restaurants.html">See more</a>
       </div>
@@ -70,10 +76,10 @@
           >Historical places</a
         >
         <a href="#">Malls</a>
-        <nav class="loc">
+        <div class="loc">
           <i class="fa-solid fa-location-dot"></i>
           <h2>Georgia, Tbilisi</h2>
-        </nav>
+        </div>
       </div>
       <div class="help">
         <h2>Help</h2>
@@ -102,3 +108,5 @@
         ></a>
       </div>
     </footer>
+  </body>
+</html>

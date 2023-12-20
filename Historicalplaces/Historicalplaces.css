@@ -50,6 +50,12 @@ table {
   border-spacing: 0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(249, 234, 219);
   animation: transitionIn 0.75s;
@@ -70,15 +76,15 @@ header {
   width: 100%;
 }
 header .container {
-  height: 100px;
+  height: 12.936610608vh;
   background-color: rgb(249, 234, 219);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 header .container img {
-  width: 370px;
-  height: 95px;
+  width: 23.125vw;
+  height: 12.2897800776vh;
   margin-left: 90px;
 }
 header .container ul {
@@ -100,7 +106,7 @@ header .container ul .link a {
 header .container ul .link a::after {
   content: "";
   position: absolute;
-  height: 2px;
+  height: 0.2587322122vh;
   width: 0px;
   bottom: 0;
   left: 0;
@@ -119,7 +125,7 @@ header .container i {
 .Restaurants {
   padding-top: 100px;
   width: 100%;
-  height: 615px;
+  height: 79.5601552393vh;
   background-image: url(photos/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -141,14 +147,14 @@ section .textline {
   align-items: center;
 }
 section .textline .rightline {
-  width: 253px;
-  height: 1px;
+  width: 15.8125vw;
+  height: 0.1293661061vh;
   background-color: #000;
   margin-left: 13px;
 }
 section .textline .leftline {
-  width: 253px;
-  height: 1px;
+  width: 15.8125vw;
+  height: 0.1293661061vh;
   background-color: #000;
   margin-right: 13px;
 }
@@ -168,8 +174,8 @@ section .top {
   gap: 45px;
 }
 section .top img {
-  width: 324px;
-  height: 324px;
+  width: 20.25vw;
+  height: 41.91461837vh;
 }
 section .top h3 {
   display: flex;
@@ -183,15 +189,21 @@ section .top h3 {
 }
 section .top a {
   text-decoration: none;
+  border-radius: 20px;
+  background-color: #24253c;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20.25vw;
+  height: 8.7968952135vh;
+}
+section .top a p {
   color: #fff;
   font-family: kalnia;
   font-size: 30px;
   font-weight: 400;
-  padding: 15px 88px;
-  border-radius: 20px;
-  background: #24253c;
-  border: 0;
-  cursor: pointer;
 }
 section .middle {
   display: flex;
@@ -200,8 +212,8 @@ section .middle {
   margin-top: 190px;
 }
 section .middle img {
-  width: 324px;
-  height: 324px;
+  width: 20.25vw;
+  height: 41.91461837vh;
 }
 section .middle h3 {
   display: flex;
@@ -215,15 +227,21 @@ section .middle h3 {
 }
 section .middle a {
   text-decoration: none;
+  border-radius: 20px;
+  background-color: #24253c;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20.25vw;
+  height: 8.7968952135vh;
+}
+section .middle a p {
   color: #fff;
   font-family: kalnia;
   font-size: 30px;
   font-weight: 400;
-  padding: 15px 88px;
-  border-radius: 20px;
-  background: #24253c;
-  border: 0;
-  cursor: pointer;
 }
 section .bottom {
   display: flex;
@@ -232,8 +250,8 @@ section .bottom {
   margin-top: 190px;
 }
 section .bottom img {
-  width: 324px;
-  height: 324px;
+  width: 20.25vw;
+  height: 41.91461837vh;
 }
 section .bottom h3 {
   display: flex;
@@ -244,20 +262,26 @@ section .bottom h3 {
   font-weight: 400;
   margin-top: 34px;
   margin-bottom: 48px;
-  width: 324px;
+  width: 20.25vw;
   text-align: center;
 }
 section .bottom a {
   text-decoration: none;
+  border-radius: 20px;
+  background-color: #24253c;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20.25vw;
+  height: 8.7968952135vh;
+}
+section .bottom a p {
   color: #fff;
   font-family: kalnia;
   font-size: 30px;
   font-weight: 400;
-  padding: 15px 88px;
-  border-radius: 20px;
-  background: #24253c;
-  border: 0;
-  cursor: pointer;
 }
 section .bottom #mtop {
   margin-bottom: 78px;
@@ -270,8 +294,8 @@ section .cube {
   margin-bottom: 190px;
 }
 section .cube .cube1 {
-  width: 40px;
-  height: 40px;
+  width: 2.5vw;
+  height: 5.1746442432vh;
   background-color: #d9d9d9;
   display: flex;
   justify-content: center;
@@ -283,8 +307,8 @@ section .cube .cube1 {
   cursor: pointer;
 }
 section .cube .cube2 {
-  width: 40px;
-  height: 40px;
+  width: 2.5vw;
+  height: 5.1746442432vh;
   background: rgba(217, 217, 217, 0.5);
   display: flex;
   justify-content: center;
@@ -296,8 +320,8 @@ section .cube .cube2 {
   cursor: pointer;
 }
 section .cube .cube3 {
-  width: 40px;
-  height: 40px;
+  width: 2.5vw;
+  height: 5.1746442432vh;
   background: rgba(217, 217, 217, 0.5);
   display: flex;
   justify-content: center;
@@ -311,7 +335,7 @@ section .cube .cube3 {
 
 footer {
   width: 100%;
-  height: 327px;
+  height: 42.3027166882vh;
   background-color: #e4e4e4;
   display: flex;
   justify-content: center;
@@ -323,8 +347,8 @@ footer .left {
   flex-direction: column;
 }
 footer .left img {
-  width: 323px;
-  height: 104px;
+  width: 20.1875vw;
+  height: 13.4540750323vh;
 }
 footer .left a {
   text-decoration: none;
@@ -354,8 +378,8 @@ footer .help {
   margin-left: 278px;
 }
 footer .help img {
-  width: 323px;
-  height: 115px;
+  width: 20.1875vw;
+  height: 14.8771021992vh;
   margin-top: 10px;
   margin-left: -10px;
 }
@@ -367,8 +391,8 @@ footer .help h2 {
   margin-bottom: 10px;
 }
 footer .help .helpline {
-  width: 173.003px;
-  height: 1px;
+  width: 10.8126875vw;
+  height: 0.1293661061vh;
   background-color: #000;
   margin-bottom: 23px;
 }
@@ -391,8 +415,8 @@ footer .contact h2 {
   margin-bottom: 10px;
 }
 footer .contact .line {
-  width: 173.003px;
-  height: 1px;
+  width: 10.8126875vw;
+  height: 0.1293661061vh;
   background-color: #000;
   margin-bottom: 23px;
 }

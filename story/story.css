@@ -70,15 +70,15 @@ header {
   width: 100%;
 }
 header .container {
-  height: 100px;
+  height: 12.936610608vh;
   background-color: rgb(249, 234, 219);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 header .container img {
-  width: 370px;
-  height: 95px;
+  width: 23.125vw;
+  height: 12.2897800776vh;
   margin-left: 90px;
 }
 header .container ul {
@@ -100,7 +100,7 @@ header .container ul .link a {
 header .container ul .link a::after {
   content: "";
   position: absolute;
-  height: 2px;
+  height: 0.2587322122vh;
   width: 0px;
   bottom: 0;
   left: 0;
@@ -119,7 +119,7 @@ header .container i {
 .story {
   padding-top: 100px;
   width: 100%;
-  height: 615px;
+  height: 79.5601552393vh;
   background-image: url(photos/history.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -143,14 +143,14 @@ header .container i {
   align-items: center;
 }
 .textline .rightline {
-  width: 253px;
-  height: 1px;
+  width: 15.8125vw;
+  height: 0.1293661061vh;
   background-color: #000;
   margin-left: 13px;
 }
 .textline .leftline {
-  width: 253px;
-  height: 1px;
+  width: 15.8125vw;
+  height: 0.1293661061vh;
   background-color: #000;
   margin-right: 13px;
 }
@@ -167,7 +167,7 @@ header .container i {
 
 .history {
   width: 100%;
-  height: 700px;
+  height: 90.5562742561vh;
   background-image: url(photos/tbilisi.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -201,7 +201,7 @@ header .container i {
 
 footer {
   width: 100%;
-  height: 327px;
+  height: 42.3027166882vh;
   background-color: #e4e4e4;
   display: flex;
 }
@@ -212,8 +212,8 @@ footer .left {
   flex-direction: column;
 }
 footer .left img {
-  width: 323px;
-  height: 104px;
+  width: 20.1875vw;
+  height: 13.4540750323vh;
 }
 footer .left a {
   text-decoration: none;
@@ -243,8 +243,8 @@ footer .help {
   margin-left: 278px;
 }
 footer .help img {
-  width: 323px;
-  height: 115px;
+  width: 10.8126875vw;
+  height: 14.8771021992vh;
   margin-top: 10px;
   margin-left: -10px;
 }
@@ -256,8 +256,8 @@ footer .help h2 {
   margin-bottom: 10px;
 }
 footer .help .helpline {
-  width: 173.003px;
-  height: 1px;
+  width: 10.8126875vw;
+  height: 0.1293661061vh;
   background-color: #000;
   margin-bottom: 23px;
 }
@@ -280,8 +280,8 @@ footer .contact h2 {
   margin-bottom: 10px;
 }
 footer .contact .line {
-  width: 173.003px;
-  height: 1px;
+  width: 10.8126875vw;
+  height: 0.1293661061vh;
   background-color: #000;
   margin-bottom: 23px;
 }

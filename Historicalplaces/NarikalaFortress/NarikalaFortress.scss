@@ -20,14 +20,14 @@ header {
   position: fixed;
   width: 100%;
   .container {
-    height: 100px;
+    height: 12.936610608020699vh;
     background-color: rgb(249, 234, 219);
     display: flex;
     justify-content: space-between;
     align-items: center;
     img {
-      width: 370px;
-      height: 95px;
+      width: 23.125vw;
+      height: 12.289780077619664vh;
       margin-left: 90px;
     }
     ul {
@@ -48,7 +48,7 @@ header {
         a::after {
           content: "";
           position: absolute;
-          height: 2px;
+          height: 0.258732212160414vh;
           width: 0px;
           bottom: 0;
           left: 0;
@@ -67,10 +67,11 @@ header {
     }
   }
 }
+
 .NarikalaFortress {
   padding-top: 100px;
   width: 100%;
-  height: 615px;
+  height: 79.5601552393273vh;
   background-image: url(photos/back.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -86,10 +87,7 @@ header {
     padding-top: 193px;
   }
 }
-.info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+section {
   .minicontainer {
     display: flex;
     justify-content: space-between;
@@ -107,23 +105,22 @@ header {
   .container {
     margin-left: 83px;
     display: flex;
-    justify-content: center;
     margin-bottom: 248px;
     .left {
       #bigpic {
-        width: 599px;
-        height: 555px;
+        width: 37.4375vw;
+        height: 71.79818887451488vh;
       }
       .bot {
         margin-top: 39px;
 
         #smallpic {
-          width: 149px;
-          height: 158px;
+          width: 9.3125vw;
+          height: 20.439844760672703vh;
         }
         #secondpic {
-          width: 149px;
-          height: 158px;
+          width: 9.3125vw;
+          height: 20.439844760672703vh;
           margin-left: 29px;
         }
       }
@@ -138,13 +135,13 @@ header {
         margin-bottom: 30px;
       }
       p {
-        width: 683px;
-        height: 222px;
+        width: 42.6875vw;
+        height: 28.71927554980595vh;
         color: #000;
         font-family: Georgia, "Times New Roman", Times, serif;
         font-size: 25px;
         font-weight: 400;
-        margin-bottom: 270px;
+        margin-bottom: 325px;
         line-height: 1.25;
       }
       .butandfav {
@@ -159,8 +156,8 @@ header {
           font-family: kalnia;
           font-size: 36px;
           font-weight: 400;
-          width: 426.617px;
-          height: 76px;
+          width: 26.6635625vw;
+          height: 9.83182406209573vh;
           border-radius: 20px;
           background: #24253c;
           border: 0;
@@ -203,18 +200,17 @@ header {
 }
 footer {
   width: 100%;
-  height: 327px;
+  height: 42.30271668822768vh;
   background-color: #e4e4e4;
   display: flex;
-  justify-content: center;
   .left {
     padding-left: 35px;
     padding-top: 17px;
     display: flex;
     flex-direction: column;
     img {
-      width: 323px;
-      height: 104px;
+      width: 20.1875vw;
+      height: 13.454075032341526vh;
     }
     a {
       text-decoration: none;
@@ -245,8 +241,8 @@ footer {
     margin-top: 61px;
     margin-left: 278px;
     img {
-      width: 323px;
-      height: 115px;
+      width: 10.8126875vw;
+      height: 14.877102199223803vh;
       margin-top: 10px;
       margin-left: -10px;
     }
@@ -258,8 +254,8 @@ footer {
       margin-bottom: 10px;
     }
     .helpline {
-      width: 173.003px;
-      height: 1px;
+      width: 10.8126875vw;
+      height: 0.129366106080207vh;
       background-color: #000;
       margin-bottom: 23px;
     }
@@ -284,8 +280,8 @@ footer {
       margin-bottom: 10px;
     }
     .line {
-      width: 173.003px;
-      height: 1px;
+      width: 10.8126875vw;
+      height: 0.129366106080207vh;
       background-color: #000;
       margin-bottom: 23px;
     }

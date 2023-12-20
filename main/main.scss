@@ -5,6 +5,21 @@ body {
   background-color: rgb(249, 234, 219);
   animation: transitionIn 0.75s;
 }
+@mixin tablet {
+  @media (width <= 768px) {
+    @content;
+  }
+}
+@mixin mobileL {
+  @media (width <= 425px) {
+    @content;
+  }
+}
+@mixin mobileS {
+  @media (width <= 380px) {
+    @content;
+  }
+}
 @keyframes transitionIn {
   from {
     opacity: 0;
@@ -19,26 +34,75 @@ header {
   position: fixed;
   width: 100%;
   .container {
-    height: 100px;
+    height: 12.936610608020699vh;
     background-color: rgb(249, 234, 219);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    input[type="checkbox"] {
+      display: none;
+    }
+    input:checked ~ ul {
+      display: flex;
+      flex-direction: column;
+      height: 60px;
+      gap: 7px;
+      font-size: 12px;
+    }
+    .bar {
+      @include mobileS {
+        display: block;
+      }
+      display: none;
+      .fa-solid {
+        font-size: 40px;
+      }
+    }
 
     img {
-      width: 370px;
-      height: 95px;
-      margin-left: 90px;
+      width: 23.125vw;
+      height: 12.289780077619664vh;
+      gap: 90px;
+      @include tablet {
+        margin-left: 15px;
+        width: 20vw;
+        height: 10vh;
+      }
+      @include mobileL {
+        margin-left: 5px;
+        width: 30vw;
+        height: 9vh;
+      }
+      @include mobileS {
+        width: 200px;
+      }
     }
     ul {
       display: flex;
       color: #000;
       font-size: 25px;
       font-weight: 400;
+      @include tablet {
+        font-size: 17px;
+      }
+      @include mobileL {
+        font-size: 11px;
+        justify-content: space-around;
+      }
+      @include mobileS {
+        display: none;
+      }
 
       .link {
         margin-right: 45px;
         font-family: Kalnia;
+        @include tablet {
+          margin-right: 20px;
+        }
+        @include mobileL {
+          margin-right: 10px;
+        }
+
         a {
           color: $darkblue;
           text-decoration: none;
@@ -48,7 +112,7 @@ header {
         a::after {
           content: "";
           position: absolute;
-          height: 2px;
+          height: 0.258732212160414vh;
           width: 0px;
           bottom: 0;
           left: 0;
@@ -64,6 +128,11 @@ header {
       margin-right: 96px;
       font-size: 25px;
       color: $darkblue;
+      @include mobileL {
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
     }
   }
 }
@@ -71,7 +140,7 @@ header {
 .story {
   padding-top: 100px;
   width: 100%;
-  height: 615px;
+  height: 79.5601552393273vh;
   background-image: url(photos/mainpic.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -87,6 +156,12 @@ header {
     font-weight: 700;
     line-height: normal;
     padding-top: 193px;
+    @include mobileL {
+      font-size: 45px;
+    }
+    @include mobileS {
+      font-size: 38px;
+    }
   }
   .button {
     display: flex;
@@ -101,12 +176,23 @@ header {
       align-items: center;
       text-decoration: none;
       transition: 0.3s;
-      width: 227px;
-      height: 55px;
+      width: 14.1875vw;
+      height: 7.115135834411384vh;
       border-radius: 8px;
       background: rgb(11, 37, 56);
       border: 0;
       transition: 0.3s;
+      @include tablet {
+        font-size: 13px;
+      }
+      @include mobileL {
+        font-size: 20px;
+        width: 39vw;
+      }
+      @include mobileS {
+        font-size: 15px;
+        width: 40vw;
+      }
     }
   }
   a:hover {
@@ -114,46 +200,68 @@ header {
     font-size: 25px;
   }
 }
-.thepopularones {
-  .textline {
+.textline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .rightline {
+    width: 15.8125vw;
+    height: 0.129366106080207vh;
+    background-color: #000;
+    margin-left: 13px;
+  }
+  .leftline {
+    width: 15.8125vw;
+    height: 0.129366106080207vh;
+    background-color: #000;
+    margin-right: 13px;
+  }
+  h2 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    .rightline {
-      width: 253px;
-      height: 1px;
-      background-color: #000;
-      margin-left: 13px;
+    color: #000;
+    font-family: kalnia;
+    font-size: 36px;
+    margin-top: 98px;
+    font-weight: 400;
+    margin-bottom: 102px;
+    @include mobileL {
+      font-size: 30px;
     }
-    .leftline {
-      width: 253px;
-      height: 1px;
-      background-color: #000;
-      margin-right: 13px;
-    }
-    h2 {
-      display: flex;
-      justify-content: center;
-      color: #000;
-      font-family: kalnia;
-      font-size: 36px;
-      margin-top: 98px;
-      font-weight: 400;
-      margin-bottom: 102px;
+    @include mobileS {
+      font-size: 20px;
     }
   }
-
+}
+section {
   .container2 {
     display: flex;
     justify-content: center;
     gap: 45px;
+    @include mobileL {
+      flex-direction: column;
+      align-items: center;
+    }
+    @include mobileS {
+      flex-direction: column;
+      align-items: center;
+    }
     div {
+      max-width: 900px;
       img {
-        width: 324px;
-        height: 324px;
+        width: 294px;
+        height: 294px;
         display: flex;
         justify-content: center;
         border-radius: 5px;
+        @include tablet {
+          width: 194px;
+          height: 194px;
+        }
+        @include mobileL {
+          width: 194px;
+          height: 194px;
+        }
       }
       h3 {
         display: flex;
@@ -164,49 +272,82 @@ header {
         font-weight: 400;
         margin-top: 27px;
         margin-bottom: 97px;
+        @include tablet {
+          font-size: 30px;
+        }
+        @include mobileL {
+          font-size: 22px;
+          margin-bottom: 25px;
+        }
+        @include mobileS {
+          margin-bottom: 25px;
+        }
       }
     }
   }
-  .but {
+}
+
+.but {
+  display: flex;
+  justify-content: center;
+  a {
+    text-decoration: none;
     display: flex;
     justify-content: center;
-    a {
-      text-decoration: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      width: 235px;
-      height: 60px;
-      border-radius: 5px;
-      background: rgb(6, 41, 66);
-      border: 0;
-      font-family: kalnia;
-      font-size: 32px;
-      font-weight: 400;
-      cursor: pointer;
-      transition: 0.3s;
-      margin-bottom: 99px;
+    align-items: center;
+    color: #fff;
+    width: 14.6875vw;
+    height: 7.7619663648124195vh;
+    border-radius: 5px;
+    background: rgb(6, 41, 66);
+    border: 0;
+    font-family: kalnia;
+    font-size: 32px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 99px;
+    @include tablet {
+      font-size: 20px;
+      width: 15.6875vw;
     }
-    a:hover {
-      font-size: 36px;
-      border-radius: 15px;
+    @include mobileL {
+      font-size: 20px;
+      width: 39vw;
     }
+  }
+  a:hover {
+    font-size: 36px;
+    border-radius: 15px;
   }
 }
 footer {
   width: 100%;
-  height: 327px;
+  height: 42.30271668822768vh;
   background-color: #e4e4e4;
   display: flex;
+  justify-content: center;
+  @include mobileL {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
   .left {
     padding-left: 35px;
     padding-top: 17px;
     display: flex;
     flex-direction: column;
+    @include mobileL {
+      padding-left: 0px;
+      padding-top: 20px;
+      align-items: center;
+    }
     img {
-      width: 323px;
-      height: 104px;
+      width: 20.1875vw;
+      height: 13.454075032341526vh;
+      @include mobileL {
+        width: 200px;
+      }
     }
     a {
       text-decoration: none;
@@ -236,11 +377,27 @@ footer {
   .help {
     margin-top: 61px;
     margin-left: 278px;
+    @include tablet {
+      margin-left: 50px;
+      padding-left: 0px;
+    }
+    @include mobileL {
+      margin-left: 0px;
+      margin-top: 30px;
+      align-items: center;
+    }
+
     img {
-      width: 323px;
-      height: 115px;
+      width: 20.1875vw;
+      height: 14.877102199223803vh;
       margin-top: 10px;
       margin-left: -10px;
+      @include tablet{
+        width: 200px;
+      }
+      @include mobileL {
+        width: 200px;
+      }
     }
     h2 {
       color: #000;
@@ -248,12 +405,19 @@ footer {
       font-size: 25px;
       font-weight: 400;
       margin-bottom: 10px;
+      @include mobileL {
+        display: flex;
+        justify-content: center;
+      }
     }
     .helpline {
-      width: 173.003px;
-      height: 1px;
+      width: 10.8126875vw;
+      height: 0.129366106080207vh;
       background-color: #000;
       margin-bottom: 23px;
+      @include mobileL {
+        margin-left: 73px;
+      }
     }
     ul {
       li {
@@ -262,24 +426,44 @@ footer {
         font-size: 20px;
         font-weight: 400;
         cursor: pointer;
+        @include mobileL {
+          display: flex;
+          justify-content: center;
+        }
       }
     }
   }
   .contact {
     margin-top: 61px;
     margin-left: 140px;
+    @include tablet {
+      margin-left: 30px;
+    }
+    @include mobileL {
+      margin-left: 0px;
+      margin-top: 30px;
+      align-items: center;
+    }
     h2 {
       color: #000;
       font-family: Kaushan Script;
       font-size: 25px;
       font-weight: 400;
       margin-bottom: 10px;
+      @include mobileL {
+        display: flex;
+        justify-content: center;
+      }
     }
     .line {
-      width: 173.003px;
-      height: 1px;
+      width: 10.8126875vw;
+      height: 0.129366106080207vh;
       background-color: #000;
       margin-bottom: 23px;
+      @include mobileL {
+        display: flex;
+        margin-left: 23px;
+      }
     }
     a {
       display: flex;
@@ -291,16 +475,32 @@ footer {
       font-weight: 400;
       margin-top: 17px;
       cursor: pointer;
+      @include mobileL {
+        display: flex;
+        align-items: center;
+      }
     }
   }
   .icons {
     margin-top: 47px;
     margin-left: 54px;
+    @include tablet {
+      margin-left: 20px;
+    }
+    @include mobileL {
+      margin-bottom: 20px;
+      margin-left: 0px;
+      margin-top: 30px;
+      align-items: center;
+    }
     a {
       i {
         font-size: 30px;
         color: #000;
         margin-left: 26px;
+        @include mobileL {
+          margin-left: 11px;
+        }
       }
     }
   }
