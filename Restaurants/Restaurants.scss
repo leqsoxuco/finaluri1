@@ -15,21 +15,6 @@ body {
     transform: rotateX(0);
   }
 }
-@mixin tablet {
-  @media (width <= 768px) {
-    @content;
-  }
-}
-@mixin mobileL {
-  @media (width <= 425px) {
-    @content;
-  }
-}
-@mixin mobileS {
-  @media (width <= 380px) {
-    @content;
-  }
-}
 header {
   position: fixed;
   width: 100%;
