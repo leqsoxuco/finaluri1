@@ -219,7 +219,7 @@ header .container i {
   }
 }
 
-.Restaurants {
+.Historicalplaces {
   padding-top: 100px;
   width: 100%;
   height: 79.5601552393vh;
@@ -229,7 +229,7 @@ header .container i {
   display: flex;
   flex-direction: column;
 }
-.Restaurants h2 {
+.Historicalplaces h2 {
   color: #fff;
   text-align: center;
   font-family: kalnia;
@@ -238,7 +238,7 @@ header .container i {
   padding-top: 193px;
 }
 @media (width <= 380px) {
-  .Restaurants h2 {
+  .Historicalplaces h2 {
     font-size: 57px;
   }
 }

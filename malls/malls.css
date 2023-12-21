@@ -223,6 +223,21 @@ header .container i {
   display: flex;
   flex-direction: column;
 }
+@media (width <= 768px) {
+  .malls {
+    background-position: center;
+  }
+}
+@media (width <= 425px) {
+  .malls {
+    background-position: center;
+  }
+}
+@media (width <= 380px) {
+  .malls {
+    background-position: center;
+  }
+}
 .malls h2 {
   color: #fff;
   text-align: center;

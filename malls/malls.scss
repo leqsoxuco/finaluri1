@@ -165,6 +165,15 @@ header {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  @include tablet{
+    background-position: center;
+  }
+  @include mobileL{
+    background-position: center;
+  }
+  @include mobileS{
+    background-position: center;
+  }
 
   h2 {
     color: #fff;
