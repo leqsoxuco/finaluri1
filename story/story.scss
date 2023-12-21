@@ -15,6 +15,21 @@ body {
     transform: rotateX(0);
   }
 }
+@mixin tablet {
+  @media (width <= 768px) {
+    @content;
+  }
+}
+@mixin mobileL {
+  @media (width <= 425px) {
+    @content;
+  }
+}
+@mixin mobileS {
+  @media (width <= 380px) {
+    @content;
+  }
+}
 header {
   position: fixed;
   width: 100%;
@@ -24,20 +39,85 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    input[type="checkbox"] {
+      display: none;
+    }
+    input:checked ~ ul {
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+      gap: 7px;
+      font-size: 12px;
+      @include mobileS {
+        transition: 0.5s;
+        transform: translateY(90px);
+        width: 100%;
+      }
+    }
+    .bar {
+      display: none;
+      @include mobileS {
+        display: block;
+      }
+      .fa-solid {
+        font-size: 40px;
+      }
+    }
+
     img {
       width: 23.125vw;
       height: 12.289780077619664vh;
-      margin-left: 90px;
+      gap: 90px;
+      @include tablet {
+        margin-left: 15px;
+        width: 20vw;
+        height: 10vh;
+      }
+      @include mobileL {
+        margin-left: 5px;
+        width: 30vw;
+        height: 9vh;
+      }
+      @include mobileS {
+        width: 200px;
+      }
     }
     ul {
       display: flex;
       color: #000;
       font-size: 25px;
       font-weight: 400;
+      align-items: center;
+      @include tablet {
+        font-size: 17px;
+      }
+      @include mobileL {
+        font-size: 11px;
+        justify-content: space-around;
+      }
+      @include mobileS {
+        display: none;
+        position: absolute;
+        background-color: rgb(249, 234, 219);
+        justify-content: end;
+        align-items: self-end;
+        transition: 0.5s;
+      }
 
       .link {
         margin-right: 45px;
         font-family: Kalnia;
+        @include tablet {
+          margin-right: 20px;
+        }
+        @include mobileL {
+          margin-right: 10px;
+        }
+        @include mobileS {
+          font-size: 20px;
+        }
+
         a {
           color: $darkblue;
           text-decoration: none;
@@ -63,6 +143,15 @@ header {
       margin-right: 96px;
       font-size: 25px;
       color: $darkblue;
+      @include mobileL {
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      @include mobileS {
+        font-size: 25px;
+        margin-bottom: 5px;
+      }
     }
   }
 }
@@ -75,6 +164,15 @@ header {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  @include tablet {
+    background-position: center;
+  }
+  @include mobileL {
+    background-position: top;
+  }
+  @include mobileS {
+    background-position: top;
+  }
 
   h2 {
     color: #fff;
@@ -85,6 +183,9 @@ header {
     font-weight: 700;
     line-height: normal;
     padding-top: 193px;
+    @include mobileS {
+      font-size: 58px;
+    }
   }
 }
 .textline {
@@ -132,6 +233,26 @@ header {
     padding-top: 50px;
     padding-left: 70px;
     padding-right: 30px;
+    @include tablet {
+      font-size: 50px;
+      padding-top: 30px;
+      padding-left: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    @include mobileL {
+      font-size: 40px;
+      padding-top: 30px;
+      padding-left: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    @include mobileS {
+      font-size: 30px;
+      padding-top: 30px;
+      padding-left: 20px;
+      padding-right: 0px;
+    }
   }
   span {
     color: rgb(195, 157, 145);
@@ -146,6 +267,27 @@ header {
     padding-left: 30px;
     padding-right: 30px;
     line-height: 35px;
+    @include tablet {
+      font-size: 25px;
+      padding-top: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+      line-height: 23px;
+    }
+    @include mobileL {
+      font-size: 18px;
+      padding-top: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+      line-height: 18px;
+    }
+    @include mobileS {
+      font-size: 16px;
+      padding-top: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+      line-height: 15px;
+    }
   }
 }
 footer {
@@ -153,14 +295,28 @@ footer {
   height: 42.30271668822768vh;
   background-color: #e4e4e4;
   display: flex;
+  justify-content: center;
+  @include mobileL {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
   .left {
     padding-left: 35px;
     padding-top: 17px;
     display: flex;
     flex-direction: column;
+    @include mobileL {
+      padding-left: 0px;
+      padding-top: 20px;
+      align-items: center;
+    }
     img {
       width: 20.1875vw;
       height: 13.454075032341526vh;
+      @include mobileL {
+        width: 200px;
+      }
     }
     a {
       text-decoration: none;
@@ -190,11 +346,27 @@ footer {
   .help {
     margin-top: 61px;
     margin-left: 278px;
+    @include tablet {
+      margin-left: 50px;
+      padding-left: 0px;
+    }
+    @include mobileL {
+      margin-left: 0px;
+      margin-top: 30px;
+      align-items: center;
+    }
+
     img {
-      width: 10.8126875vw;
+      width: 20.1875vw;
       height: 14.877102199223803vh;
       margin-top: 10px;
       margin-left: -10px;
+      @include tablet {
+        width: 200px;
+      }
+      @include mobileL {
+        width: 200px;
+      }
     }
     h2 {
       color: #000;
@@ -202,12 +374,19 @@ footer {
       font-size: 25px;
       font-weight: 400;
       margin-bottom: 10px;
+      @include mobileL {
+        display: flex;
+        justify-content: center;
+      }
     }
     .helpline {
       width: 10.8126875vw;
       height: 0.129366106080207vh;
       background-color: #000;
       margin-bottom: 23px;
+      @include mobileL {
+        margin-left: 73px;
+      }
     }
     ul {
       li {
@@ -216,24 +395,44 @@ footer {
         font-size: 20px;
         font-weight: 400;
         cursor: pointer;
+        @include mobileL {
+          display: flex;
+          justify-content: center;
+        }
       }
     }
   }
   .contact {
     margin-top: 61px;
     margin-left: 140px;
+    @include tablet {
+      margin-left: 30px;
+    }
+    @include mobileL {
+      margin-left: 0px;
+      margin-top: 30px;
+      align-items: center;
+    }
     h2 {
       color: #000;
       font-family: Kaushan Script;
       font-size: 25px;
       font-weight: 400;
       margin-bottom: 10px;
+      @include mobileL {
+        display: flex;
+        justify-content: center;
+      }
     }
     .line {
       width: 10.8126875vw;
       height: 0.129366106080207vh;
       background-color: #000;
       margin-bottom: 23px;
+      @include mobileL {
+        display: flex;
+        margin-left: 23px;
+      }
     }
     a {
       display: flex;
@@ -245,18 +444,33 @@ footer {
       font-weight: 400;
       margin-top: 17px;
       cursor: pointer;
+      @include mobileL {
+        display: flex;
+        align-items: center;
+      }
     }
   }
   .icons {
     margin-top: 47px;
     margin-left: 54px;
+    @include tablet {
+      margin-left: 20px;
+    }
+    @include mobileL {
+      margin-bottom: 20px;
+      margin-left: 0px;
+      margin-top: 30px;
+      align-items: center;
+    }
     a {
       i {
         font-size: 30px;
         color: #000;
         margin-left: 26px;
+        @include mobileL {
+          margin-left: 11px;
+        }
       }
     }
   }
 }
-

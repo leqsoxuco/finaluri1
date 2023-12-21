@@ -76,20 +76,104 @@ header .container {
   justify-content: space-between;
   align-items: center;
 }
+header .container input[type=checkbox] {
+  display: none;
+}
+header .container input:checked ~ ul {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  gap: 7px;
+  font-size: 12px;
+}
+@media (width <= 380px) {
+  header .container input:checked ~ ul {
+    transition: 0.5s;
+    transform: translateY(90px);
+    width: 100%;
+  }
+}
+header .container .bar {
+  display: none;
+}
+@media (width <= 380px) {
+  header .container .bar {
+    display: block;
+  }
+}
+header .container .bar .fa-solid {
+  font-size: 40px;
+}
 header .container img {
   width: 23.125vw;
   height: 12.2897800776vh;
-  margin-left: 90px;
+  gap: 90px;
+}
+@media (width <= 768px) {
+  header .container img {
+    margin-left: 15px;
+    width: 20vw;
+    height: 10vh;
+  }
+}
+@media (width <= 425px) {
+  header .container img {
+    margin-left: 5px;
+    width: 30vw;
+    height: 9vh;
+  }
+}
+@media (width <= 380px) {
+  header .container img {
+    width: 200px;
+  }
 }
 header .container ul {
   display: flex;
   color: #000;
   font-size: 25px;
   font-weight: 400;
+  align-items: center;
+}
+@media (width <= 768px) {
+  header .container ul {
+    font-size: 17px;
+  }
+}
+@media (width <= 425px) {
+  header .container ul {
+    font-size: 11px;
+    justify-content: space-around;
+  }
+}
+@media (width <= 380px) {
+  header .container ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(249, 234, 219);
+    justify-content: end;
+    align-items: self-end;
+    transition: 0.5s;
+  }
 }
 header .container ul .link {
   margin-right: 45px;
   font-family: Kalnia;
+}
+@media (width <= 768px) {
+  header .container ul .link {
+    margin-right: 20px;
+  }
+}
+@media (width <= 425px) {
+  header .container ul .link {
+    margin-right: 10px;
+  }
+}
+@media (width <= 380px) {
+  header .container ul .link {
+    font-size: 20px;
+  }
 }
 header .container ul .link a {
   color: rgba(11, 37, 56, 0.8);
@@ -115,6 +199,19 @@ header .container i {
   font-size: 25px;
   color: rgba(11, 37, 56, 0.8);
 }
+@media (width <= 425px) {
+  header .container i {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media (width <= 380px) {
+  header .container i {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+}
 
 .story {
   padding-top: 100px;
@@ -126,6 +223,21 @@ header .container i {
   display: flex;
   flex-direction: column;
 }
+@media (width <= 768px) {
+  .story {
+    background-position: center;
+  }
+}
+@media (width <= 425px) {
+  .story {
+    background-position: top;
+  }
+}
+@media (width <= 380px) {
+  .story {
+    background-position: top;
+  }
+}
 .story h2 {
   color: #fff;
   text-align: center;
@@ -135,6 +247,11 @@ header .container i {
   font-weight: 700;
   line-height: normal;
   padding-top: 193px;
+}
+@media (width <= 380px) {
+  .story h2 {
+    font-size: 58px;
+  }
 }
 
 .textline {
@@ -184,6 +301,32 @@ header .container i {
   padding-left: 70px;
   padding-right: 30px;
 }
+@media (width <= 768px) {
+  .history h2 {
+    font-size: 50px;
+    padding-top: 30px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (width <= 425px) {
+  .history h2 {
+    font-size: 40px;
+    padding-top: 30px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (width <= 380px) {
+  .history h2 {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+}
 .history span {
   color: rgb(195, 157, 145);
 }
@@ -198,12 +341,47 @@ header .container i {
   padding-right: 30px;
   line-height: 35px;
 }
+@media (width <= 768px) {
+  .history p {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 23px;
+  }
+}
+@media (width <= 425px) {
+  .history p {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 18px;
+  }
+}
+@media (width <= 380px) {
+  .history p {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 15px;
+  }
+}
 
 footer {
   width: 100%;
   height: 42.3027166882vh;
   background-color: #e4e4e4;
   display: flex;
+  justify-content: center;
+}
+@media (width <= 425px) {
+  footer {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
 }
 footer .left {
   padding-left: 35px;
@@ -211,9 +389,21 @@ footer .left {
   display: flex;
   flex-direction: column;
 }
+@media (width <= 425px) {
+  footer .left {
+    padding-left: 0px;
+    padding-top: 20px;
+    align-items: center;
+  }
+}
 footer .left img {
   width: 20.1875vw;
   height: 13.4540750323vh;
+}
+@media (width <= 425px) {
+  footer .left img {
+    width: 200px;
+  }
 }
 footer .left a {
   text-decoration: none;
@@ -242,11 +432,34 @@ footer .help {
   margin-top: 61px;
   margin-left: 278px;
 }
+@media (width <= 768px) {
+  footer .help {
+    margin-left: 50px;
+    padding-left: 0px;
+  }
+}
+@media (width <= 425px) {
+  footer .help {
+    margin-left: 0px;
+    margin-top: 30px;
+    align-items: center;
+  }
+}
 footer .help img {
-  width: 10.8126875vw;
+  width: 20.1875vw;
   height: 14.8771021992vh;
   margin-top: 10px;
   margin-left: -10px;
+}
+@media (width <= 768px) {
+  footer .help img {
+    width: 200px;
+  }
+}
+@media (width <= 425px) {
+  footer .help img {
+    width: 200px;
+  }
 }
 footer .help h2 {
   color: #000;
@@ -255,11 +468,22 @@ footer .help h2 {
   font-weight: 400;
   margin-bottom: 10px;
 }
+@media (width <= 425px) {
+  footer .help h2 {
+    display: flex;
+    justify-content: center;
+  }
+}
 footer .help .helpline {
   width: 10.8126875vw;
   height: 0.1293661061vh;
   background-color: #000;
   margin-bottom: 23px;
+}
+@media (width <= 425px) {
+  footer .help .helpline {
+    margin-left: 73px;
+  }
 }
 footer .help ul li {
   color: #000;
@@ -268,9 +492,27 @@ footer .help ul li {
   font-weight: 400;
   cursor: pointer;
 }
+@media (width <= 425px) {
+  footer .help ul li {
+    display: flex;
+    justify-content: center;
+  }
+}
 footer .contact {
   margin-top: 61px;
   margin-left: 140px;
+}
+@media (width <= 768px) {
+  footer .contact {
+    margin-left: 30px;
+  }
+}
+@media (width <= 425px) {
+  footer .contact {
+    margin-left: 0px;
+    margin-top: 30px;
+    align-items: center;
+  }
 }
 footer .contact h2 {
   color: #000;
@@ -279,11 +521,23 @@ footer .contact h2 {
   font-weight: 400;
   margin-bottom: 10px;
 }
+@media (width <= 425px) {
+  footer .contact h2 {
+    display: flex;
+    justify-content: center;
+  }
+}
 footer .contact .line {
   width: 10.8126875vw;
   height: 0.1293661061vh;
   background-color: #000;
   margin-bottom: 23px;
+}
+@media (width <= 425px) {
+  footer .contact .line {
+    display: flex;
+    margin-left: 23px;
+  }
 }
 footer .contact a {
   display: flex;
@@ -296,14 +550,38 @@ footer .contact a {
   margin-top: 17px;
   cursor: pointer;
 }
+@media (width <= 425px) {
+  footer .contact a {
+    display: flex;
+    align-items: center;
+  }
+}
 footer .icons {
   margin-top: 47px;
   margin-left: 54px;
+}
+@media (width <= 768px) {
+  footer .icons {
+    margin-left: 20px;
+  }
+}
+@media (width <= 425px) {
+  footer .icons {
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-top: 30px;
+    align-items: center;
+  }
 }
 footer .icons a i {
   font-size: 30px;
   color: #000;
   margin-left: 26px;
+}
+@media (width <= 425px) {
+  footer .icons a i {
+    margin-left: 11px;
+  }
 }
 
 /*# sourceMappingURL=story.css.map */
