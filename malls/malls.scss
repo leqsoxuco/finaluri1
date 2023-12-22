@@ -157,7 +157,6 @@ header {
 }
 
 .malls {
-  padding-top: 100px;
   width: 100%;
   height: 79.5601552393273vh;
   background-image: url(photos/back.jpg);
@@ -165,6 +164,8 @@ header {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   @include tablet{
     background-position: center;
   }
@@ -181,7 +182,6 @@ header {
     font-family: kalnia;
     font-size: 70px;
     font-weight: 700;
-    padding-top: 193px;
   }
 }
 section {
