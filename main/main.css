@@ -214,7 +214,6 @@ header .container i {
 }
 
 .story {
-  padding-top: 100px;
   width: 100%;
   height: 79.5601552393vh;
   background-image: url(photos/mainpic.jpg);
@@ -222,16 +221,14 @@ header .container i {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .story h2 {
   color: #fff;
-  text-align: center;
   font-family: kalnia;
   font-size: 70px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  padding-top: 193px;
 }
 @media (width <= 425px) {
   .story h2 {
@@ -240,12 +237,13 @@ header .container i {
 }
 @media (width <= 380px) {
   .story h2 {
-    font-size: 38px;
+    font-size: 28px;
   }
 }
 .story .button {
   display: flex;
   justify-content: center;
+  padding-top: 30px;
 }
 .story .button a {
   color: #fff;

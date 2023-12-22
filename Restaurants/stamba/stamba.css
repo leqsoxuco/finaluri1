@@ -271,6 +271,11 @@ section .container .left {
   display: flex;
   flex-direction: column;
 }
+@media (width <= 380px) {
+  section .container .left {
+    margin-top: -40px;
+  }
+}
 section .container .left #bigpic {
   width: 37.4375vw;
   height: 71.7981888745vh;
@@ -290,7 +295,6 @@ section .container .left .bot {
 @media (width <= 380px) {
   section .container .left .bot {
     margin-top: 20px;
-    margin-left: 7%;
     margin-left: 12px;
   }
 }
@@ -329,9 +333,8 @@ section .container .right h2 {
 }
 @media (width <= 380px) {
   section .container .right h2 {
-    margin-top: -447px;
-    position: absolute;
-    margin-left: -17px;
+    margin-top: 20px;
+    margin-left: -27px;
   }
 }
 section .container .right p {

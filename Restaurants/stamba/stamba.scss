@@ -176,7 +176,6 @@ section {
         font-weight: 400;
         @include mobileS {
           font-size: 12px;
-          
         }
       }
     }
@@ -193,12 +192,15 @@ section {
     .left {
       display: flex;
       flex-direction: column;
+      @include mobileS{
+        margin-top: -40px;
+      }
       #bigpic {
         width: 37.4375vw;
         height: 71.79818887451488vh;
         border-radius: 5px;
         @include mobileS {
-          margin-left:4%;
+          margin-left: 4%;
           width: 275px;
           height: 245px;
           border-radius: 5px;
@@ -208,7 +210,6 @@ section {
         margin-top: 39px;
         @include mobileS {
           margin-top: 20px;
-          margin-left: 7%;
           margin-left: 12px;
         }
         #smallpic {
@@ -241,9 +242,8 @@ section {
         font-weight: 400;
         margin-bottom: 30px;
         @include mobileS {
-          margin-top: -447px;
-          position: absolute;
-          margin-left: -17px;
+          margin-top: 20px;
+          margin-left: -27px;
         }
       }
       p {
