@@ -237,6 +237,16 @@ section .minicontainer {
   justify-content: space-between;
   margin: 107px 90px 118px 90px;
 }
+@media (width <= 768px) {
+  section .minicontainer {
+    margin: 107px 30px 118px 45px;
+  }
+}
+@media (width <= 425px) {
+  section .minicontainer {
+    margin: 60px 15px 100px 15px;
+  }
+}
 @media (width <= 380px) {
   section .minicontainer {
     margin: 60px 15px 100px 15px;
@@ -249,6 +259,12 @@ section .minicontainer .right h3 {
   font-size: 25px;
   font-weight: 400;
 }
+@media (width <= 425px) {
+  section .minicontainer .left h3,
+  section .minicontainer .right h3 {
+    font-size: 15px;
+  }
+}
 @media (width <= 380px) {
   section .minicontainer .left h3,
   section .minicontainer .right h3 {
@@ -260,20 +276,39 @@ section .container {
   display: flex;
   margin-bottom: 248px;
 }
-@media (width <= 380px) {
+@media (width <= 768px) {
+  section .container {
+    margin-left: 25px;
+  }
+}
+@media (width <= 425px) {
   section .container {
     margin-left: 10px;
     flex-direction: column;
     margin-bottom: 115px;
+    align-items: center;
+  }
+}
+@media (width <= 380px) {
+  section .container {
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 115px;
+    margin-left: 0;
   }
 }
 section .container .left {
   display: flex;
   flex-direction: column;
 }
-@media (width <= 380px) {
+@media (width <= 425px) {
   section .container .left {
     margin-top: -40px;
+  }
+}
+@media (width <= 380px) {
+  section .container .left {
+    margin-top: 0px;
   }
 }
 section .container .left #bigpic {
@@ -281,9 +316,23 @@ section .container .left #bigpic {
   height: 71.7981888745vh;
   border-radius: 5px;
 }
+@media (width <= 768px) {
+  section .container .left #bigpic {
+    width: 50.4375vw;
+    height: 55.7981888745vh;
+  }
+}
+@media (width <= 425px) {
+  section .container .left #bigpic {
+    margin-left: 0;
+    width: 275px;
+    height: 245px;
+    border-radius: 5px;
+  }
+}
 @media (width <= 380px) {
   section .container .left #bigpic {
-    margin-left: 4%;
+    margin-left: 0%;
     width: 275px;
     height: 245px;
     border-radius: 5px;
@@ -295,13 +344,31 @@ section .container .left .bot {
 @media (width <= 380px) {
   section .container .left .bot {
     margin-top: 20px;
-    margin-left: 12px;
+    margin-left: 0px;
+  }
+}
+@media (width <= 425px) {
+  section .container .left .bot {
+    margin-top: 20px;
+    margin-left: 0;
   }
 }
 section .container .left .bot #smallpic {
   width: 9.3125vw;
   height: 20.4398447607vh;
   border-radius: 5px;
+}
+@media (width <= 768px) {
+  section .container .left .bot #smallpic {
+    width: 15.3125vw;
+    height: 17.4398447607vh;
+  }
+}
+@media (width <= 425px) {
+  section .container .left .bot #smallpic {
+    width: 95px;
+    height: 95px;
+  }
 }
 @media (width <= 380px) {
   section .container .left .bot #smallpic {
@@ -315,6 +382,18 @@ section .container .left .bot #secondpic {
   margin-left: 29px;
   border-radius: 5px;
 }
+@media (width <= 768px) {
+  section .container .left .bot #secondpic {
+    width: 15.3125vw;
+    height: 17.4398447607vh;
+  }
+}
+@media (width <= 425px) {
+  section .container .left .bot #secondpic {
+    width: 95px;
+    height: 95px;
+  }
+}
 @media (width <= 380px) {
   section .container .left .bot #secondpic {
     width: 95px;
@@ -324,6 +403,17 @@ section .container .left .bot #secondpic {
 section .container .right {
   margin-left: 74px;
 }
+@media (width <= 768px) {
+  section .container .right {
+    margin-left: 30px;
+  }
+}
+@media (width <= 425px) {
+  section .container .right {
+    align-items: center;
+    margin-left: 0px;
+  }
+}
 section .container .right h2 {
   color: #000;
   font-family: Metal;
@@ -331,10 +421,21 @@ section .container .right h2 {
   font-weight: 400;
   margin-bottom: 30px;
 }
+@media (width <= 768px) {
+  section .container .right h2 {
+    margin-bottom: 15px;
+  }
+}
+@media (width <= 425px) {
+  section .container .right h2 {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
 @media (width <= 380px) {
   section .container .right h2 {
     margin-top: 20px;
-    margin-left: -27px;
+    margin-left: 0px;
   }
 }
 section .container .right p {
@@ -347,11 +448,27 @@ section .container .right p {
   margin-bottom: 325px;
   line-height: 1.25;
 }
+@media (width <= 768px) {
+  section .container .right p {
+    margin-bottom: 355px;
+    font-size: 18px;
+    width: 40vw;
+  }
+}
+@media (width <= 425px) {
+  section .container .right p {
+    font-size: 16px;
+    width: 300px;
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-bottom: 265px;
+  }
+}
 @media (width <= 380px) {
   section .container .right p {
     font-size: 16px;
     width: 300px;
-    margin-left: -70px;
+    margin-left: 0;
     margin-top: 30px;
     margin-bottom: 265px;
   }
@@ -359,6 +476,16 @@ section .container .right p {
 section .container .right .butandfav {
   display: flex;
   align-items: center;
+}
+@media (width <= 425px) {
+  section .container .right .butandfav {
+    justify-content: center;
+  }
+}
+@media (width <= 380px) {
+  section .container .right .butandfav {
+    justify-content: center;
+  }
 }
 section .container .right .butandfav a {
   display: flex;
@@ -377,10 +504,17 @@ section .container .right .butandfav a {
   cursor: pointer;
   margin-right: 22px;
 }
+@media (width <= 425px) {
+  section .container .right .butandfav a {
+    width: 57.663563vw;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
 @media (width <= 380px) {
   section .container .right .butandfav a {
     width: 57.663563vw;
-    margin-left: -35px;
+    margin-left: 0px;
     margin-top: 10px;
   }
 }
