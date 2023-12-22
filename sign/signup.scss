@@ -1,4 +1,19 @@
-@use "_index.scss" as *;
+@use "../main/index.scss" as *;
+@mixin tablet {
+  @media (width <= 768px) {
+    @content;
+  }
+}
+@mixin mobileL {
+  @media (width <= 425px) {
+    @content;
+  }
+}
+@mixin mobileS {
+  @media (width <= 380px) {
+    @content;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +28,16 @@ section {
   @include flex;
 }
 .sign {
+  @include tablet {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @include mobileL {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    margin: 10px 15px 10px 5px;
+  }
   width: 650px;
   height: 650px;
   background-color: #0b2538cc;
@@ -26,6 +51,13 @@ section {
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     background-image: url(photos/gif.gif);
+    @include mobileL {
+      height: 200px;
+      width: 400px;
+      background-image: url(photos/mobileL.gif);
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 20px;
+    }
     h1 {
       color: #fff;
       font-size: 35px;
@@ -33,7 +65,10 @@ section {
       font-weight: 600;
       display: flex;
       justify-content: center;
-      margin-top: 60px;
+      margin-top: 65px;
+      @include mobileL {
+        margin-top: 79px;
+      }
     }
     .icons {
       i {
@@ -48,6 +83,9 @@ section {
   justify-content: center;
   margin-top: 505px;
   gap: 20px;
+  @include mobileL {
+    margin-top: 490px;
+  }
 }
 .fa-facebook {
   color: rgb(44, 67, 242);
@@ -59,81 +97,108 @@ section {
   color: black;
 }
 .input {
-  form {
-    margin-top: -90px;
-    label {
-      margin-left: 30px;
-      display: flex;
-      margin-top: 10px;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      color: #fff;
-      font-size: 25px;
-      font-weight: 700;
+  .sup {
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    gap: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 22.5px;
+    font-weight: 900;
+    margin-bottom: 150px;
+    @include mobileL {
+      transform: rotate(90deg);
+      font-size: 22.5px;
+      font-weight: 900;
+      margin-top: -110px;
+      padding-bottom: 340px;
+      margin-bottom: 0px;
     }
-    input {
-      color: #fff;
-      display: flex;
-      margin-left: 30px;
-      margin-top: 15px;
-      width: 270px;
-      height: 40px;
-      border-radius: 5px;
-      border: 1px solid #fff;
-      padding: 15px;
-      background-color: rgba(83, 73, 73, 0.712);
-      font-weight: 600;
+    #in {
+      height: 60px;
+      width: 100px;
+      @include flex;
+    }
+    #up {
+      background-color: rgba(106, 129, 143, 0.566);
+      height: 60px;
+      width: 100px;
+      @include flex;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
   }
-}
-.sup {
-  display: flex;
-  justify-content: end;
-  align-items: flex-start;
-  gap: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 15px;
-  margin-bottom: 150px;
-  #in {
-    height: 60px;
-    width: 100px;
+
+  #linkk {
+    @include mobileL {
+      margin-top: 20px;
+    }
+    text-decoration: none;
+    color: #fff;
+    padding: 25px;
+    width: 200px;
+    height: 40px;
     @include flex;
+    border-radius: 15px;
+    border: 0px;
+    margin-left: 65px;
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.386);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #fff;
+    transition: 0.3s;
+    &:hover {
+      background-color: #0b2538cc;
+    }
   }
-  #up {
-    background-color: rgba(106, 129, 143, 0.566);
-    height: 60px;
-    width: 100px;
-    @include flex;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+  .cont {
+    @include mobileL {
+      margin-top: -280px;
+    }
+    form {
+      margin-top: -90px;
+      label {
+        margin-left: 30px;
+        display: flex;
+        margin-top: 10px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 700;
+        @include mobileL {
+          font-size: 25px;
+          width: 200px;
+          height: 20px;
+        }
+      }
+      input {
+        color: #fff;
+        display: flex;
+        margin-left: 30px;
+        margin-top: 15px;
+        width: 270px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        padding: 15px;
+        background-color: rgba(83, 73, 73, 0.712);
+        font-weight: 600;
+      }
+    }
   }
 }
 a {
   text-decoration: none;
   color: #fff;
 }
-button {
-  padding: 25px;
-  width: 200px;
-  height: 40px;
-  @include flex;
-  border-radius: 15px;
-  border: 0px;
-  margin-left: 65px;
-  margin-top: 40px;
-  background-color: rgba(255, 255, 255, 0.386);
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 25px;
-  border: 2px solid #fff;
-  transition: 0.3s;
-  a {
-    color: #fff;
-  }
-  &:hover {
-    background-color: #0b2538cc;
-  }
-}
 #mess {
+  @include mobileL {
+    margin-right: 30px;
+    margin-bottom: 45px;
+  }
   a {
     i {
       font-size: 50px;
@@ -143,6 +208,14 @@ button {
       margin-right: 50px;
       bottom: 0px;
       margin-bottom: 90px;
+      @include tablet {
+        margin-right: 80px;
+        margin-bottom: 50px;
+      }
+      @include mobileL {
+        margin-right: 35px;
+        margin-bottom: 50px;
+      }
     }
   }
 }

@@ -10,12 +10,6 @@ body {
   background-repeat: no-repeat;
 }
 
-#logo {
-  width: 70px;
-  height: 70px;
-  margin-top: 15px;
-}
-
 section {
   display: flex;
   justify-content: center;
@@ -31,12 +25,35 @@ section {
   display: flex;
   box-shadow: 10px 10px 5px 5px rgba(107, 120, 125, 0.48);
 }
+@media (width <= 768px) {
+  .sign {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (width <= 425px) {
+  .sign {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    margin: 10px 15px 10px 5px;
+  }
+}
 .sign .img1 {
   width: 320px;
   height: 650px;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   background-image: url(photos/gif.gif);
+}
+@media (width <= 425px) {
+  .sign .img1 {
+    height: 200px;
+    width: 400px;
+    background-image: url(photos/mobileL.gif);
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+  }
 }
 .sign .img1 h1 {
   color: #fff;
@@ -46,6 +63,11 @@ section {
   display: flex;
   justify-content: center;
   margin-top: 60px;
+}
+@media (width <= 425px) {
+  .sign .img1 h1 {
+    margin-top: 79px;
+  }
 }
 .sign .img1 .icons i {
   font-size: 40px;
@@ -57,6 +79,11 @@ section {
   justify-content: center;
   margin-top: 505px;
   gap: 20px;
+}
+@media (width <= 425px) {
+  .icons {
+    margin-top: 485px;
+  }
 }
 
 .fa-facebook {
@@ -74,14 +101,103 @@ section {
 .input {
   margin-top: 150px;
 }
-.input form label {
+@media (width <= 425px) {
+  .input {
+    margin-top: 0;
+  }
+}
+.input .reg {
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  margin-top: -150px;
+  gap: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  margin-bottom: 150px;
+}
+@media (width <= 425px) {
+  .input .reg {
+    transform: rotate(90deg);
+    font-size: 22.5px;
+    font-weight: 900;
+    margin-top: -110px;
+    padding-bottom: 340px;
+    margin-bottom: 0px;
+  }
+}
+.input .reg #in {
+  background-color: rgba(106, 129, 143, 0.566);
+  height: 60px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.input .reg #up {
+  height: 60px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input #linkk {
+  text-decoration: none;
+  color: #fff;
+  padding: 25px;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 0px;
+  margin-left: 65px;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.386);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #fff;
+  transition: 0.3s;
+}
+@media (width <= 425px) {
+  .input #linkk {
+    margin-top: 20px;
+    font-size: 22.5px;
+  }
+}
+.input #linkk:hover {
+  background-color: rgba(11, 37, 56, 0.8);
+}
+@media (width <= 425px) {
+  .input .cont {
+    margin-top: -280px;
+  }
+}
+@media (width <= 425px) {
+  .input .cont form {
+    margin-top: 50px;
+  }
+}
+.input .cont form label {
   margin-left: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #fff;
   font-size: 25px;
   font-weight: 700;
 }
-.input form input {
+@media (width <= 425px) {
+  .input .cont form label {
+    font-size: 25px;
+    width: 200px;
+    height: 20px;
+  }
+}
+.input .cont form input {
   color: #fff;
   display: flex;
   justify-content: center;
@@ -97,64 +213,18 @@ section {
   background-color: rgba(83, 73, 73, 0.712);
 }
 
-.reg {
-  display: flex;
-  justify-content: end;
-  align-items: flex-start;
-  margin-top: -150px;
-  gap: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 15px;
-  margin-bottom: 150px;
-}
-.reg #in {
-  background-color: rgba(106, 129, 143, 0.566);
-  height: 60px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.reg #up {
-  height: 60px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 a {
   text-decoration: none;
   color: #fff;
+  font-size: 22.5px;
 }
 
-button {
-  padding: 25px;
-  width: 200px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  border: 0px;
-  margin-left: 65px;
-  margin-top: 40px;
-  background-color: rgba(255, 255, 255, 0.386);
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 25px;
-  border: 2px solid #fff;
-  transition: 0.3s;
+@media (width <= 425px) {
+  #mess {
+    margin-right: 30px;
+    margin-bottom: 45px;
+  }
 }
-button a {
-  color: #fff;
-}
-button:hover {
-  background-color: rgba(11, 37, 56, 0.8);
-}
-
 #mess a i {
   font-size: 50px;
   color: rgb(44, 67, 242);
@@ -163,6 +233,18 @@ button:hover {
   margin-right: 50px;
   bottom: 0px;
   margin-bottom: 90px;
+}
+@media (width <= 768px) {
+  #mess a i {
+    margin-right: 80px;
+    margin-bottom: 50px;
+  }
+}
+@media (width <= 425px) {
+  #mess a i {
+    margin-right: 35px;
+    margin-bottom: 50px;
+  }
 }
 
 ::placeholder {

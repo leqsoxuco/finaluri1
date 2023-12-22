@@ -1,4 +1,19 @@
 @use "_index.scss" as *;
+@mixin tablet {
+  @media (width <= 768px) {
+    @content;
+  }
+}
+@mixin mobileL {
+  @media (width <= 425px) {
+    @content;
+  }
+}
+@mixin mobileS {
+  @media (width <= 380px) {
+    @content;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,15 +24,20 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#logo {
-  width: 70px;
-  height: 70px;
-  margin-top: 15px;
-}
 section {
   @include flex;
 }
 .sign {
+  @include tablet {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @include mobileL {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    margin: 10px 15px 10px 5px;
+  }
   width: 650px;
   height: 650px;
   background-color: #0b2538cc;
@@ -31,6 +51,13 @@ section {
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     background-image: url(photos/gif.gif);
+    @include mobileL {
+      height: 200px;
+      width: 400px;
+      background-image: url(photos/mobileL.gif);
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 20px;
+    }
     h1 {
       color: #fff;
       font-size: 35px;
@@ -39,6 +66,9 @@ section {
       display: flex;
       justify-content: center;
       margin-top: 60px;
+      @include mobileL {
+        margin-top: 79px;
+      }
     }
     .icons {
       i {
@@ -53,6 +83,9 @@ section {
   justify-content: center;
   margin-top: 505px;
   gap: 20px;
+  @include mobileL {
+    margin-top: 485px;
+  }
 }
 .fa-facebook {
   color: rgb(44, 67, 242);
@@ -60,84 +93,119 @@ section {
 .fa-google {
   color: rgb(255, 0, 0);
 }
-.fa-x-twitter{
+.fa-x-twitter {
   color: black;
 }
 .input {
   margin-top: 150px;
-  form {
-    label {
-      margin-left: 30px;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      color: #fff;
-      font-size: 25px;
-      font-weight: 700;
+  @include mobileL {
+    margin-top: 0;
+  }
+  .reg {
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    margin-top: -150px;
+    gap: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 15px;
+    margin-bottom: 150px;
+    @include mobileL {
+      transform: rotate(90deg);
+      font-size: 22.5px;
+      font-weight: 900;
+      margin-top: -110px;
+      padding-bottom: 340px;
+      margin-bottom: 0px;
     }
-    input {
-      color: #fff;
+    #in {
+      background-color: rgba(106, 129, 143, 0.566);
+      height: 60px;
+      width: 100px;
       @include flex;
-      margin-left: 30px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    #up {
+      height: 60px;
+      width: 100px;
+      @include flex;
+    }
+  }
+
+  #linkk {
+    @include mobileL {
       margin-top: 20px;
-      margin-bottom: 12px;
-      width: 270px;
-      height: 40px;
-      border-radius: 5px;
-      border: 1px solid #fff;
-      padding: 15px;
-      background-color: rgba(83, 73, 73, 0.712);
+      font-size: 22.5px;
+    }
+    text-decoration: none;
+    color: #fff;
+    padding: 25px;
+    width: 200px;
+    height: 40px;
+    @include flex;
+    border-radius: 15px;
+    border: 0px;
+    margin-left: 65px;
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.386);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #fff;
+    transition: 0.3s;
+    &:hover {
+      background-color: #0b2538cc;
+    }
+  }
+  .cont {
+    @include mobileL {
+      margin-top: -280px;
+    }
+    form {
+      @include mobileL {
+        margin-top: 50px;
+      }
+      label {
+        margin-left: 30px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 700;
+        @include mobileL {
+          font-size: 25px;
+          width: 200px;
+          height: 20px;
+        }
+      }
+      input {
+        color: #fff;
+        @include flex;
+        margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 12px;
+        width: 270px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        padding: 15px;
+        background-color: rgba(83, 73, 73, 0.712);
+      }
     }
   }
 }
-.reg {
-  display: flex;
-  justify-content: end;
-  align-items: flex-start;
-  margin-top: -150px;
-  gap: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 15px;
-  margin-bottom: 150px;
-  #in {
-    background-color: rgba(106, 129, 143, 0.566);
-    height: 60px;
-    width: 100px;
-    @include flex;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
-  #up {
-    height: 60px;
-    width: 100px;
-    @include flex;
-  }
-}
+
 a {
   text-decoration: none;
   color: #fff;
-}
-button {
-  padding: 25px;
-  width: 200px;
-  height: 40px;
-  @include flex;
-  border-radius: 15px;
-  border: 0px;
-  margin-left: 65px;
-  margin-top: 40px;
-  background-color: rgba(255, 255, 255, 0.386);
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 25px;
-  border: 2px solid #fff;
-  transition: 0.3s;
-  a {
-    color: #fff;
-  }
-  &:hover {
-    background-color: #0b2538cc;
-  }
+  font-size: 22.5px;
 }
 #mess {
+  @include mobileL {
+    margin-right: 30px;
+    margin-bottom: 45px;
+  }
   a {
     i {
       font-size: 50px;
@@ -147,6 +215,14 @@ button {
       margin-right: 50px;
       bottom: 0px;
       margin-bottom: 90px;
+      @include tablet {
+        margin-right: 80px;
+        margin-bottom: 50px;
+      }
+      @include mobileL{
+        margin-right: 35px;
+        margin-bottom: 50px;
+      }
     }
   }
 }
