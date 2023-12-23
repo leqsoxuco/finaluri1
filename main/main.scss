@@ -95,7 +95,7 @@ header {
         justify-content: space-around;
       }
       @include mobileS {
-        height: 91px;
+        height: 99px;
         z-index: -100;
         display: flex;
         flex-direction: column;
@@ -119,7 +119,7 @@ header {
           margin-right: 10px;
         }
         @include mobileS {
-          font-size: 16px;
+          font-size: 16.5px;
         }
 
         a {
