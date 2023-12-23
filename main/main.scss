@@ -49,10 +49,9 @@ header {
       height: 100px;
       gap: 7px;
       font-size: 12px;
+
       @include mobileS {
-        transition: 0.5s;
         transform: translateY(90px);
-        width: 100%;
       }
     }
     .bar {
@@ -89,6 +88,7 @@ header {
       font-size: 25px;
       font-weight: 400;
       align-items: center;
+      transition: 0.5s;
       @include tablet {
         font-size: 17px;
       }
@@ -97,7 +97,12 @@ header {
         justify-content: space-around;
       }
       @include mobileS {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        gap: 7px;
+        font-size: 12px;
+        width: 100%;
         position: absolute;
         background-color: rgb(249, 234, 219);
         justify-content: end;
@@ -172,7 +177,7 @@ header {
     font-size: 70px;
     font-weight: 700;
     @include mobileL {
-      font-size: 45px;
+      font-size: 37px;
     }
     @include mobileS {
       font-size: 28px;
@@ -275,8 +280,8 @@ section {
           height: 194px;
         }
         @include mobileL {
-          width: 194px;
-          height: 194px;
+          width: 278px;
+          height: 278px;
         }
       }
       h3 {
@@ -292,7 +297,7 @@ section {
           font-size: 30px;
         }
         @include mobileL {
-          font-size: 22px;
+          font-size: 35px;
           margin-bottom: 25px;
         }
         @include mobileS {
