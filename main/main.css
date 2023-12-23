@@ -87,7 +87,7 @@ header .container input:checked ~ ul {
 }
 @media (width <= 380px) {
   header .container input:checked ~ ul {
-    transform: translateY(90px);
+    padding-top: 250px;
   }
 }
 header .container .bar {
@@ -176,7 +176,7 @@ header .container ul .link {
 }
 @media (width <= 380px) {
   header .container ul .link {
-    font-size: 16.5px;
+    font-size: 25.5px;
   }
 }
 header .container ul .link a {
@@ -212,7 +212,7 @@ header .container i {
 }
 @media (width <= 380px) {
   header .container i {
-    font-size: 18px;
+    font-size: 28px;
     margin-bottom: 5px;
   }
 }
