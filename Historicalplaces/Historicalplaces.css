@@ -88,15 +88,12 @@ header .container input[type=checkbox] {
 header .container input:checked ~ ul {
   display: flex;
   flex-direction: column;
-  height: 100px;
   gap: 7px;
   font-size: 12px;
 }
 @media (width <= 380px) {
   header .container input:checked ~ ul {
-    transition: 0.5s;
-    transform: translateY(90px);
-    width: 100%;
+    padding-top: 367px;
   }
 }
 header .container .bar {
@@ -140,6 +137,12 @@ header .container ul {
   font-size: 25px;
   font-weight: 400;
   align-items: center;
+  transition: 0.7s;
+}
+@media (width <= 380px) {
+  header .container ul #man {
+    padding-bottom: 15px;
+  }
 }
 @media (width <= 768px) {
   header .container ul {
@@ -154,7 +157,13 @@ header .container ul {
 }
 @media (width <= 380px) {
   header .container ul {
-    display: none;
+    height: 99px;
+    z-index: -100;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-size: 12px;
+    width: 100%;
     position: absolute;
     background-color: rgb(249, 234, 219);
     justify-content: end;
@@ -178,7 +187,7 @@ header .container ul .link {
 }
 @media (width <= 380px) {
   header .container ul .link {
-    font-size: 20px;
+    font-size: 25.5px;
   }
 }
 header .container ul .link a {
@@ -214,8 +223,7 @@ header .container i {
 }
 @media (width <= 380px) {
   header .container i {
-    font-size: 25px;
-    margin-bottom: 5px;
+    font-size: 28px;
   }
 }
 

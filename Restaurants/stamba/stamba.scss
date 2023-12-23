@@ -31,13 +31,10 @@ header {
     input:checked ~ ul {
       display: flex;
       flex-direction: column;
-      height: 100px;
       gap: 7px;
       font-size: 12px;
       @include mobileS {
-        transition: 0.5s;
-        transform: translateY(90px);
-        width: 100%;
+        padding-top: 265px;
       }
     }
     .bar {
@@ -74,6 +71,12 @@ header {
       font-size: 25px;
       font-weight: 400;
       align-items: center;
+      transition: 0.5s;
+      #man {
+        @include mobileS {
+          padding-bottom: 15px;
+        }
+      }
       @include tablet {
         font-size: 17px;
       }
@@ -82,7 +85,13 @@ header {
         justify-content: space-around;
       }
       @include mobileS {
-        display: none;
+        height: 99px;
+        z-index: -100;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        font-size: 12px;
+        width: 100%;
         position: absolute;
         background-color: rgb(249, 234, 219);
         justify-content: end;
@@ -100,7 +109,7 @@ header {
           margin-right: 10px;
         }
         @include mobileS {
-          font-size: 20px;
+          font-size: 25.5px;
         }
 
         a {
@@ -134,12 +143,12 @@ header {
         margin-right: 10px;
       }
       @include mobileS {
-        font-size: 25px;
-        margin-bottom: 5px;
+        font-size: 28px;
       }
     }
   }
 }
+
 .stamba {
   width: 100%;
   height: 79.5601552393273vh;
