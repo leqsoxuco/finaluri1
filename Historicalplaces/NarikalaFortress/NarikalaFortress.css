@@ -114,7 +114,7 @@ header .container input:checked ~ ul {
 }
 @media (width <= 380px) {
   header .container input:checked ~ ul {
-    padding-top: 265px;
+    padding-top: 290px;
   }
 }
 header .container .bar {
