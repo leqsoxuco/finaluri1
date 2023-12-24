@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -11,12 +10,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Home</title>
+    <link rel="stylesheet" href="Favorites.css" />
+    <title>Favorites</title>
   </head>
   <body>
     <header>
       <nav class="container">
-        <a href="#"><img src="photos/LOGO.png" alt="logo" /></a>
+        <a href="../main/main.html"><img src="photos/LOGO.png" alt="logo" /></a>
         <label for="turn" class="bar">
           <i class="fa-solid fa-bars"></i>
         </label>
@@ -32,40 +32,49 @@
           </li>
           <li class="link"><a href="../malls/malls.html">Malls</a></li>
           <li>
-            <a href="../Favorites/favorites.html"><i id="man" class="fa-regular fa-heart"></i></a>
+            <a href=""><i id="man" class="fa-regular fa-heart"></i></a>
           </li>
         </ul>
       </nav>
     </header>
-    <section class="story">
-      <h2>Get To Know Tbilisi</h2>
-      <div class="button">
-        <a href="../story/story.html">GET TO KNOW</a>
-      </div>
-    </section>
     <section>
-      <div class="textline">
-        <div class="leftline"></div>
-        <h2>Most Popular</h2>
-        <div class="rightline"></div>
-      </div>
-      <div class="container2">
-        <div>
-          <img src="photos/stamba.jpg" alt="stamba" />
-          <h3>Stamba</h3>
+      <div class="container27">
+        <h2>FAVORITES</h2>
+        <div class="sne">
+          <div>
+            <img src="photos/stamba.jpg" alt="stamba" />
+            <div class="seered">
+              <h3>Stamba</h3>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="dire">
+              <a href="../Restaurants/stamba/stamba.html"><p>See more</p></a>
+            </div>
+          </div>
+          <div>
+            <img src="photos/narikala.jpg" alt="narikala" />
+            <div class="seered">
+              <h3>Narikala Fortress</h3>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="dire">
+              <a
+                href="../Historicalplaces/NarikalaFortress/NarikalaFortress.html"
+                ><p>See more</p></a
+              >
+            </div>
+          </div>
+          <div>
+            <img src="photos/eastpoint.jpg" alt="" />
+            <div class="seered">
+              <h3>East Point</h3>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="dire">
+              <a href="../malls/eastpoint/eastpoint.html"><p>See more</p></a>
+            </div>
+          </div>
         </div>
-        <div>
-          <img src="photos/narikala.jpg" alt="narikala" />
-          <h3>Narikala</h3>
-        </div>
-        <div>
-          <img src="photos/eastpoint.jpg" alt="Eastpoint" />
-          <h3>Eastpoint</h3>
-        </div>
-      </div>
-
-      <div class="but">
-        <a href="../Restaurants/Restaurants.html">See more</a>
       </div>
     </section>
     <footer>
@@ -99,15 +108,21 @@
         <a href="https://twitter.com/?lang=en">Twitter</a>
       </div>
       <div class="icons">
-        <a href="https://www.instagram.com/"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a href="https://www.facebook.com/"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-        <a href="https://twitter.com/?lang=en"
-          ><i class="fa-brands fa-x-twitter"></i
-        ></a>
+        <div class="iconss">
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com/?lang=en"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </div>
+
+        <div class="signout">
+          <a href="../index.html">Sign Out</a>
+        </div>
       </div>
     </footer>
   </body>
