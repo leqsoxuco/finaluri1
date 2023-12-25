@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -11,9 +12,15 @@ body {
 }
 
 section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sign {
@@ -22,8 +29,11 @@ section {
   background-color: rgba(11, 37, 56, 0.8);
   margin-top: 40px;
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  box-shadow: 10px 10px 5px 5px rgba(107, 120, 125, 0.48);
+  -webkit-box-shadow: 10px 10px 5px 5px rgba(107, 120, 125, 0.48);
+          box-shadow: 10px 10px 5px 5px rgba(107, 120, 125, 0.48);
 }
 @media (width <= 768px) {
   .sign {
@@ -33,10 +43,20 @@ section {
 }
 @media (width <= 425px) {
   .sign {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 400px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 10px 15px 10px 5px;
+  }
+}
+@media (width <= 380px) {
+  .sign {
+    width: 290px;
   }
 }
 .sign .img1 {
@@ -55,13 +75,23 @@ section {
     border-top-right-radius: 20px;
   }
 }
+@media (width <= 380px) {
+  .sign .img1 {
+    width: 290px;
+    background-position: right;
+  }
+}
 .sign .img1 h1 {
   color: #fff;
   font-size: 35px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 60px;
 }
 @media (width <= 425px) {
@@ -75,27 +105,52 @@ section {
 }
 
 .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 505px;
   gap: 20px;
 }
 @media (width <= 425px) {
   .icons {
-    margin-top: 485px;
+    margin-top: 250px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 10px;
+  }
+}
+@media (width <= 380px) {
+  .icons {
+    margin-top: 480px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 0px;
   }
 }
 
 .fa-facebook {
-  color: rgb(44, 67, 242);
+  color: rgb(38, 63, 255);
 }
 
 .fa-google {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 52, 52);
 }
 
 .fa-x-twitter {
-  color: black;
+  color: rgb(23, 23, 23);
 }
 
 .input {
@@ -107,9 +162,15 @@ section {
   }
 }
 .input .reg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: end;
-  align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-top: -150px;
   gap: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -118,30 +179,38 @@ section {
 }
 @media (width <= 425px) {
   .input .reg {
-    transform: rotate(90deg);
-    font-size: 22.5px;
-    font-weight: 900;
-    margin-top: -110px;
-    padding-bottom: 340px;
-    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-right: 10px;
   }
 }
 .input .reg #in {
   background-color: rgba(106, 129, 143, 0.566);
   height: 60px;
   width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 .input .reg #up {
   height: 60px;
   width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .input #linkk {
   text-decoration: none;
@@ -149,9 +218,15 @@ section {
   padding: 25px;
   width: 200px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 15px;
   border: 0px;
   margin-left: 65px;
@@ -162,12 +237,19 @@ section {
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   border: 2px solid #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 @media (width <= 425px) {
   .input #linkk {
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 22.5px;
+  }
+}
+@media (width <= 380px) {
+  .input #linkk {
+    margin-left: 45px;
   }
 }
 .input #linkk:hover {
@@ -180,7 +262,7 @@ section {
 }
 @media (width <= 425px) {
   .input .cont form {
-    margin-top: 50px;
+    margin-top: 310px;
   }
 }
 .input .cont form label {
@@ -197,11 +279,22 @@ section {
     height: 20px;
   }
 }
+@media (width <= 380px) {
+  .input .cont form label {
+    margin-left: 20px;
+  }
+}
 .input .cont form input {
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 30px;
   margin-top: 20px;
   margin-bottom: 12px;
@@ -212,6 +305,12 @@ section {
   padding: 15px;
   background-color: rgba(83, 73, 73, 0.712);
 }
+@media (width <= 380px) {
+  .input .cont form input {
+    margin-left: 20px;
+    width: 250px;
+  }
+}
 
 a {
   text-decoration: none;
@@ -219,32 +318,20 @@ a {
   font-size: 22.5px;
 }
 
-@media (width <= 425px) {
-  #mess {
-    margin-right: 30px;
-    margin-bottom: 45px;
-  }
+::-webkit-input-placeholder {
+  color: #fff;
 }
-#mess a i {
-  font-size: 50px;
-  color: rgb(44, 67, 242);
-  position: fixed;
-  right: 0px;
-  margin-right: 50px;
-  bottom: 0px;
-  margin-bottom: 90px;
+
+::-moz-placeholder {
+  color: #fff;
 }
-@media (width <= 768px) {
-  #mess a i {
-    margin-right: 80px;
-    margin-bottom: 50px;
-  }
+
+:-ms-input-placeholder {
+  color: #fff;
 }
-@media (width <= 425px) {
-  #mess a i {
-    margin-right: 35px;
-    margin-bottom: 50px;
-  }
+
+::-ms-input-placeholder {
+  color: #fff;
 }
 
 ::placeholder {
@@ -263,5 +350,3 @@ a {
 iframe {
   display: none;
 }
-
-/*# sourceMappingURL=signin.css.map */
